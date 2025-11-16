@@ -1,0 +1,6 @@
+body{margin:0;font-family:sans-serif;background:#f7faf6;color:#203020}
+.wrap{max-width:900px;margin:auto;padding:20px}
+.site-header{background:#e9f1e7;position:sticky;top:0}
+.navwrap{display:flex;justify-content:space-between;align-items:center}
+.logo{width:42px}
+.nav a{margin-left:12px;color:#203020;font-weight:600}

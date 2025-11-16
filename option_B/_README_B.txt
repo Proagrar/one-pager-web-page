@@ -1,0 +1,1 @@
+Option B: Single-page, mobile-first, dark-mode, eco agri-tech style.\n\nFiles:\n- index.html\n- assets/css/styles.css\n- assets/js/main.js\n- images/logo.svg, images/field.jpg, images/case1.jpg, images/case2.jpg\n\nTo deploy: create a new GitHub repo, push these files to main branch, then enable GitHub Pages (branch: main, folder: / (root)).
