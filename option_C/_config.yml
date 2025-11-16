@@ -1,0 +1,5 @@
+title: EcoTech One-Pager
+baseurl: ""          # use "" for root deployment
+url: "https://yourusername.github.io"
+markdown: kramdown
+theme: minima         # optional, or remove if custom styling
