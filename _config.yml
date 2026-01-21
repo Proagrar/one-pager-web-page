@@ -1,0 +1,67 @@
+# Site settings
+title: Proagrar
+lang: sl
+description: Agrotech podjetje za precizno kmetijstvo
+url: "" # the base hostname & protocol for your site
+baseurl: "" # the subpath of your site, e.g. /blog
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README.md
+
+# Navigation
+nav:
+  - label: Domov
+    url: /
+  - label: Precizno kmetijstvo
+    url: /about/
+  - label: Storitve
+    url: /services/
+  - label: Uporabniška izkušnja
+    url: /cases/
+  - label: Kontakt
+    url: /contact/
+
+# Brand
+brand:
+  name: Proagrar
+  tagline: Precizno kmetijstvo za prihodnost
+
+# Company info
+company:
+  email: info@proagrar.si
+  phone: +386 41 000 000
+
+# Accessibility labels
+a11y:
+  skip_to_content: Preskoči na vsebino
+  chat_open: Odpri klepet
+  chat_close: Zapri klepet
+
+# Chat widget
+chat:
+  title: Hitri kontakt
+  intro: Pošljite nam sporočilo in odgovorili vam bomo v najkrajšem času.
+  name_label: Ime
+  email_label: E-pošta
+  message_label: Sporočilo
+  send_label: Pošlji
+  placeholder_name: Vaše ime
+  placeholder_email: vasa@eposta.si
+  placeholder_message: Vaše sporočilo...
+
+# Leads endpoint (optional, fallback to mailto)
+leads:
+  endpoint: ""
+

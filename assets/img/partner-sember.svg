@@ -1,0 +1,5 @@
+<svg width="200" height="100" xmlns="http://www.w3.org/2000/svg">
+  <rect width="200" height="100" fill="white" rx="5"/>
+  <circle cx="40" cy="50" r="20" fill="#1c4592" opacity="0.15"/>
+  <text x="105" y="55" font-family="Arial, sans-serif" font-size="16" fill="#1c4592" text-anchor="middle" font-weight="700">Šember vina</text>
+</svg>

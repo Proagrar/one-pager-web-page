@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="sl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+
+  <title>Proagrar - Precizno kmetijstvo</title>
+  <meta name="description" content="Proagrar - agrotech podjetje za precizno kmetijstvo">
+
+  <!-- Inter font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+
+  <body>
+    <a class="skip-link" href="#main">Preskoči na vsebino</a>
+
+    {% include header.html %}
+
+    <main id="main" class="main" tabindex="-1">
+      {{ content }}
+    </main>
+
+    {% include footer.html %}
+
+    <div class="chat" data-chat>
+      <button class="chat__fab" type="button" aria-haspopup="dialog" aria-expanded="false" aria-controls="chat-panel" aria-label="Odpri klepet" data-chat-open>
+        <span aria-hidden="true">+</span>
+      </button>
+
+      <div class="chat__panel" id="chat-panel" role="dialog" aria-modal="false" aria-label="Hitri kontakt" hidden data-chat-panel>
+        <div class="chat__header">
+          <div class="chat__title">Hitri kontakt</div>
+          <button class="chat__close" type="button" aria-label="Zapri klepet" data-chat-close>
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+
+        <div class="chat__body">
+          <p class="chat__intro">Pošljite nam sporočilo in odgovorili vam bomo v najkrajšem času.</p>
+
+          <form class="chat__form" novalidate data-chat-form>
+            <label class="field">
+              <span class="field__label">Ime</span>
+              <input class="field__input" name="name" autocomplete="name" inputmode="text" placeholder="Vaše ime" required>
+            </label>
+
+            <label class="field">
+              <span class="field__label">E-pošta</span>
+              <input class="field__input" name="email" autocomplete="email" inputmode="email" placeholder="vasa@eposta.si" required>
+            </label>
+
+            <label class="field">
+              <span class="field__label">Sporočilo</span>
+              <textarea class="field__input" name="message" rows="3" placeholder="Vaše sporočilo..." required></textarea>
+            </label>
+
+            <div class="chat__actions">
+              <button class="btn btn--primary" type="submit" data-chat-send>
+                Pošlji
+              </button>
+            </div>
+
+            <div class="form__status" role="status" aria-live="polite" data-chat-status></div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script src="./assets/js/main.js" defer></script>
+  </body>
+</html>
