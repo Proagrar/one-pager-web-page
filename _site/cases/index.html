@@ -8,7 +8,7 @@
   <meta property="og:title" content="Proagrar - Precizno kmetijstvo">
   <meta property="og:description" content="Želite izstopati na svojem področju in imeti večjo poslovno uspešnost? Precizno kmetijstvo Proagrar je pravo orodje do vašega cilja!">
   <meta property="og:type" content="website">
-  <title>{{ page.title | default: 'Proagrar - Precizno kmetijstvo za večjo uspešnost' }}</title>
+  <title>Uporabniška izkušnja</title>
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,7 +16,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
   <!-- Styles -->
-  <link rel="stylesheet" href="{{ '/assets/css/base.css' | relative_url }}">
+  <link rel="stylesheet" href="/assets/css/base.css">
 </head>
 
 <body>
@@ -25,8 +25,8 @@
   <header class="header" id="header">
     <div class="container">
       <div class="header-inner">
-        <a href="{{ '/' | relative_url }}" class="logo">
-          <img src="{{ '/assets/img/Proagrar_LOGO-14.png' | relative_url }}" alt="Proagrar" loading="eager">
+        <a href="/" class="logo">
+          <img src="/assets/img/Proagrar_LOGO-14.png" alt="Proagrar" loading="eager">
         </a>
         <button class="menu-toggle" onclick="toggleMenu()" aria-label="Odpri meni">☰</button>
         <nav>
@@ -43,7 +43,51 @@
   </header>
 
   <main id="main">
-    {{ content }}
+    <section id="cases" class="section" data-animate="">
+  <div class="container">
+    <header class="section__header">
+      <h2 class="section__title">Uporabniška izkušnja</h2>
+      <p class="section__lead">Izjave kmetov: kako precizno kmetijstvo vpliva na krmo, pridelke in homogenost.</p>
+    </header>
+
+    <div class="grid grid--3">
+      <article class="card card--quote">
+        <h3 class="card__title">Živinorejec</h3>
+        <p class="muted">Janez Škrjanec, 60 ha travinje in polja</p>
+        <p>
+          "Precizno travinje? Seveda. Od analiz, gnojenja do svetovanja prepuščamo Proagrarju. 
+          Kakovost mleka je odvisna od krme. Z uvedbo preciznega smo optimizirali razvoz gnojevke 
+          in minimalizirali mineralna gnojila. Zaključek? Več za manj."
+        </p>
+      </article>
+
+      <article class="card card--quote">
+        <h3 class="card__title">Poljedelec</h3>
+        <p class="muted">Franc Štih / Marko Vargazon, 200+ ha</p>
+        <p>
+          "Z uvedbo preciznega kmetijstva smo spoznali, katera gnojila res potrebujemo. 
+          Premik od NPK na 'solo P' in 'solo K' omogoča optimalno založenje tal. 
+          Prve setve z mapami – boljši pridelki in izjemno boljša homogenost."
+        </p>
+      </article>
+
+      <article class="card card--quote">
+        <h3 class="card__title">Trajni nasadi</h3>
+        <p class="muted">Žiga Evrosad / Tadej Štoka</p>
+        <p>
+          "Spoznali smo razlike ne samo med nasadi, temveč tudi znotraj njih samih. 
+          Sistem tal je kompleksen: od humusa do P, Ca in Mg. Sodelovanje se nadaljuje 
+          z gnojenjem po mapah in svetovanjem. Zaključek? Opazen napredek – pozitivno."
+        </p>
+      </article>
+    </div>
+
+    <p style="margin-top: 1.25rem;">
+      <a class="btn btn--primary" href="/#contact">Preveri razpoložljivost</a>
+    </p>
+  </div>
+</section>
+
   </main>
 
   <footer class="footer">

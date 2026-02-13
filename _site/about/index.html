@@ -8,7 +8,7 @@
   <meta property="og:title" content="Proagrar - Precizno kmetijstvo">
   <meta property="og:description" content="Želite izstopati na svojem področju in imeti večjo poslovno uspešnost? Precizno kmetijstvo Proagrar je pravo orodje do vašega cilja!">
   <meta property="og:type" content="website">
-  <title>{{ page.title | default: 'Proagrar - Precizno kmetijstvo za večjo uspešnost' }}</title>
+  <title>Precizno kmetijstvo</title>
 
   <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,7 +16,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
   <!-- Styles -->
-  <link rel="stylesheet" href="{{ '/assets/css/base.css' | relative_url }}">
+  <link rel="stylesheet" href="/assets/css/base.css">
 </head>
 
 <body>
@@ -25,8 +25,8 @@
   <header class="header" id="header">
     <div class="container">
       <div class="header-inner">
-        <a href="{{ '/' | relative_url }}" class="logo">
-          <img src="{{ '/assets/img/Proagrar_LOGO-14.png' | relative_url }}" alt="Proagrar" loading="eager">
+        <a href="/" class="logo">
+          <img src="/assets/img/Proagrar_LOGO-14.png" alt="Proagrar" loading="eager">
         </a>
         <button class="menu-toggle" onclick="toggleMenu()" aria-label="Odpri meni">☰</button>
         <nav>
@@ -43,7 +43,53 @@
   </header>
 
   <main id="main">
-    {{ content }}
+    <section id="about" class="section" data-animate="">
+  <div class="container">
+    <header class="section__header">
+      <h2 class="section__title">Precizno kmetijstvo</h2>
+      <p class="section__lead">
+        Želite izstopati in imeti večjo poslovno uspešnost?
+        <strong>Precizno kmetijstvo Proagrar</strong> je pravo orodje do vašega cilja.
+      </p>
+    </header>
+
+    <div class="grid grid--2">
+      <div class="card">
+        <h3 class="card__title">Prednosti pametnega kmetijstva</h3>
+        <ul class="list list--check">
+          <li><strong>Več za manj</strong></li>
+          <li>Optimalna preskrba tal → <strong>maksimalni pridelek</strong></li>
+          <li>Razumeti tla pomeni razumeti <strong>podatke</strong></li>
+          <li>Najvišja strokovna podpora – <strong>tukaj smo za vas</strong></li>
+        </ul>
+        <p>
+          Za vsako polje, travnik, vinograd ali sadovnjak pripravimo prilagojene korake – 
+          od zajema podatkov do izvedbe.
+        </p>
+        <p>
+          <a class="btn btn--primary" href="/#contact">Preveri razpoložljivost</a>
+        </p>
+      </div>
+
+      <div class="card">
+        <h3 class="card__title" id="how">Kako deluje analiza tal?</h3>
+        <p>
+          Proces je zasnovan tako, da iz raznolikosti znotraj polja dobimo jasne odločitve: 
+          kje dodati, kje zmanjšati in kako doseči enakomeren pridelek ter višjo učinkovitost.
+        </p>
+        <ol class="list list--steps">
+          <li><strong>Segmentacija in vzorčenje</strong> glede na produktivnost.</li>
+          <li><strong>Laboratorijska analiza</strong> in obdelava podatkov.</li>
+          <li><strong>Izračun potreb</strong> (organska, nato mineralna gnojila) in jasno poročilo.</li>
+          <li><strong>Priprava gnojilnih/setvenih map</strong> za optimalno preskrbo.</li>
+          <li><strong>Izvedba + svetovanje</strong> za doseganje najvišjih standardov.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+  
+</section>
+
   </main>
 
   <footer class="footer">
