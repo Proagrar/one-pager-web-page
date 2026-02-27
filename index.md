@@ -10,11 +10,10 @@ nav_order: 1
 <section class="hero" id="domov">
     <div class="hero-bg" id="hero-bg"></div>
     <div class="hero-content fade-in">
-        <h1>Želite izstopati na svojem področju in imeti večjo poslovno uspešnost?</h1>
-        <p>Precizno kmetijstvo Proagrar je pravo orodje do vašega cilja!</p>
+        <h1>Gospodarno z manj stroški do večjega in boljšega pridelka ter žive zemlje</h1>
+        <p>Proagrar – vaš strokovni partner za precizno kmetijstvo.</p>
         <div class="hero-cta">
             <a href="#kontakt" class="btn btn-primary">Kontaktiraj nas</a>
-            <a href="#prednosti" class="btn btn-secondary">Izvedi več</a>
         </div>
     </div>
 </section>
@@ -25,19 +24,19 @@ nav_order: 1
         <div class="stats-grid">
             <div class="stat-item fade-in">
                 <span class="stat-number">50+</span>
-                <span class="stat-label">Kmetij uporablja Proagrar</span>
+                <span class="stat-label">zadovoljnih naročnikov</span>
             </div>
             <div class="stat-item fade-in">
-                <span class="stat-number">10,000+</span>
-                <span class="stat-label">Hektarjev analiziranih tal</span>
+                <span class="stat-number">20+</span>
+                <span class="stat-label">let izkušenj</span>
             </div>
             <div class="stat-item fade-in">
-                <span class="stat-number">95%</span>
-                <span class="stat-label">Zadovoljnih uporabnikov</span>
+                <span class="stat-number">98%+</span>
+                <span class="stat-label">uspešnost projektov</span>
             </div>
             <div class="stat-item fade-in">
-                <span class="stat-number">30%</span>
-                <span class="stat-label">Povečanje učinkovitosti</span>
+                <span class="stat-number">10.000+ ha</span>
+                <span class="stat-label">opravljenih analiz</span>
             </div>
         </div>
     </div>
