@@ -46,29 +46,29 @@ nav_order: 1
 <section class="section" id="prednosti">
     <div class="container">
         <div class="section-header fade-in">
-            <h2 class="section-title">Prednosti pametnega kmetijstva</h2>
-            <p class="section-subtitle">Optimiziramo vložke, pridelke in skladnost z zahtevami za maksimalno učinkovitost</p>
+            <h2 class="section-title">Zakaj precizno kmetijstvo?</h2>
+            <!-- <p class="section-subtitle">Optimiziramo vložke, pridelke in skladnost z zahtevami za maksimalno učinkovitost</p> -->
         </div>
         <div class="features-grid">
             <div class="feature-card fade-in">
                 <div class="feature-icon">💰</div>
-                <h3>Več za manj</h3>
-                <p>Optimizirajte stroške in povečajte pridelek. Z natančnimi podatki dosežete boljše rezultate z manjšimi vložki.</p>
+                <h3>+ 20% večji pridelek</h3>
+                <p>Natančnost za večjo donosnost.</p>
             </div>
             <div class="feature-card fade-in">
                 <div class="feature-icon">🎯</div>
-                <h3>Optimalna preskrba tal</h3>
-                <p>Maksimalni pridelek z optimalno preskrbo tal. Natančno gnojenje in setev po meri vsakega segmenta.</p>
+                <h3>- 20% nižji stroški</h3>
+                <p>Porabite le toliko, kot je potrebno.</p>
             </div>
             <div class="feature-card fade-in">
                 <div class="feature-icon">📊</div>
-                <h3>Razumeti tla pomeni razumeti podatke</h3>
-                <p>Podatki so osnova za pametne odločitve. Analiziramo, interpretiramo in pripravimo jasna priporočila.</p>
+                <h3>Manjši vpliv na okolje</h3>
+                <p>Varno za naravo, varno za prihodnost.</p>
             </div>
             <div class="feature-card fade-in">
                 <div class="feature-icon">🤝</div>
-                <h3>Najvišja strokovna podpora</h3>
-                <p>Tukaj smo za vas! Strokovna podpora od analize do izvedbe z najnovejšimi tehnologijami.</p>
+                <h3>10x donos na investicijo</h3>
+                <p>Investicija, ki se bogato obrestuje.</p>
             </div>
         </div>
     </div>
@@ -78,26 +78,27 @@ nav_order: 1
 <section class="section section-alt" id="kako-deluje">
     <div class="container">
         <div class="section-header fade-in">
-            <h2 class="section-title">Kako deluje</h2>
-            <p class="section-subtitle">Proces je zasnovan tako, da iz raznolikosti znotraj polja dobimo jasne odločitve</p>
+            <h2 class="section-title">Kaj in kako delamo?</h2>
+            <!-- <p class="section-subtitle">Proces je zasnovan tako, da iz raznolikosti znotraj polja dobimo jasne odločitve</p> -->
         </div>
         
         <div class="process-step fade-in">
             <div class="process-content">
                 <span class="step-number">1</span>
-                <h3>Segmentacija in vzorčenje tal</h3>
-                <p>Analiza polja različnih produktivnih segmentov. Vzorce vzamemo v laboratorij in jih analiziramo po najnovejšem standardu.</p>
+                <h3>SEGMENTACIJA IN VZORČENJE TAL</h3>
+                <p>Vsaka površina potrebuje začetno segmentacijo, pri čemer polje/travnik ali trajni nasad razdelimo na produktivnostne cone. Vodilo nam je dejstvo, da je rast rastlin refleksija na stanje v tleh. Sledi najpreciznejši odvzem vzorcev, pri čemer uporabljamo RTK signal, ki memorira mesto vboda in sondo, ki omogoča, da ob enem vbodu vzorce delimo celo na tri globine (trajni nasadi 0-30, 30-65, 65-105 cm) . Tako dobimo jasen vpogled v fizikalno in kemijsko sestavo vsakega segmenta polja posebej (strukturo tal, vodno kapaciteto, hranilne potrebe …).</p>
             </div>
             <div class="process-image">
                 <div style="background: #f9fafb; border-radius: 10px; padding: 40px; text-align: center; color: #6b7280;">Segmentacija tal</div>
             </div>
         </div>
+
         
         <div class="process-step fade-in">
             <div class="process-content">
                 <span class="step-number">2</span>
-                <h3>Laboratorijska analiza</h3>
-                <p>Vsak vzorec je analiziran na več kot 40 parametrov. Rezultati so osnova za izračun optimalnih gnojilnih norm.</p>
+                <h3>OBDELAVA PODATKOV IN OPTIMIZACIJA</h3>
+                <p>Vzorci zemlje v najkrajšem času potujejo v laboratorij. Ob prispelih podatkih iz laboratorija se opravi izračun potrebe po vnosu elementov pri čemer prvo vnesemo plan vnosa organskih gnojil (priporočljiva analiza gnojevke)  kar generira jasen izračun in priporočilo o gnojenju posevka za naslednjo sezono. Poročilo je jasno, enostavno ter vključuje bistvene elemente v tleh.</p>
             </div>
             <div class="process-image">
                 <div style="background: #f9fafb; border-radius: 10px; padding: 40px; text-align: center; color: #6b7280;">Laboratorijska analiza</div>
@@ -107,17 +108,40 @@ nav_order: 1
         <div class="process-step fade-in">
             <div class="process-content">
                 <span class="step-number">3</span>
-                <h3>Priprava gnojilnih map</h3>
-                <p>Podatki se obdelajo v precizne gnojilne mape. Rezultat je jasno, praktično vodilo za izvajanje.</p>
+                <h3>PRIPRAVA GNOJILNIH IN SETVENIH MAP</h3>
+                <p>Bistveno je razumevanje podatkov ter personalizacija vsakega polja, znotraj večjih polj pa posameznega segmenta znotraj polja. Predstavljajte si, da je vsak predel polja, travnika, vinograda ali sadovnjaka preskrbljen optimalno, da na delih z večjim potencialom ne primanjkuje hranil, medtem ko na drugih delih preprečimo presežke…to je formula po kateri praviloma ustvarjamo več z manj!</p>
             </div>
             <div class="process-image">
                 <div style="background: #f9fafb; border-radius: 10px; padding: 40px; text-align: center; color: #6b7280;">Precizne mape</div>
+            </div>
+        </div>
+        
+        <div class="process-step fade-in">
+            <div class="process-content">
+                <span class="step-number">4</span>
+                <h3>STORITVE PRECIZNEGA KMETIJSTVA</h3>
+                <p>Vaša kmetija potrebuje uslugo gnojenja, setve, zaščite posevka? Za vas lahko to pravimo mi, s podporo najnovejše mehanizacije in strokovnim znanjem.</p>
+            </div>
+            <div class="process-image">
+                <div style="background: #f9fafb; border-radius: 10px; padding: 40px; text-align: center; color: #6b7280;">precizno gnojenje, setev, ...</div>
+            </div>
+        </div>
+        
+        <div class="process-step fade-in">
+            <div class="process-content">
+                <span class="step-number">5</span>
+                <h3>STROKOVNA PODPORA IN SVETOVANJE</h3>
+                <p>Precizna analiza tal je začetek procesa. V času od analize vam je potreben nekdo, ki razume tla, elemente v tleh, potrebe posevka in doseganje najvišjih standardov v proizvodnji z uporabo najnovejših tehnologij za ustvarjanje presežkov.</p>
+            </div>
+            <div class="process-image">
+                <div style="background: #f9fafb; border-radius: 10px; padding: 40px; text-align: center; color: #6b7280;">Strokovna podpora</div>
             </div>
         </div>
     </div>
 </section>
 
 <!-- SERVICES -->
+<!-- 
 <section class="section" id="storitve">
     <div class="container">
         <div class="section-header fade-in">
@@ -182,38 +206,59 @@ nav_order: 1
         </div>
     </div>
 </section>
+ -->
+<!-- SERVICES -->
+<section class="section" id="o_nas">
+    <div class="container">
+        <div class="section-header fade-in">
+            <h2 class="section-title">O nas</h2>
+            <p class="section-subtitle">
+            V želji po sožitju z naravo in uživanju kakovostnih lokalnih pridelkov smo združili moči strokovnjaki s področja agronomije in digitalnih storitev. Naše poslanstvo je podpreti slovenske kmete – tako na manjših kmetijah kot večjih obdelovalnih površinah – pri uvajanju <strong>preciznega in regenerativnega kmetijstva</strong>. Verjamemo, da ste prav vi ključni za boljšo prihodnost vseh nas, zato vam ponujamo <strong>znanje in podporo</strong>, ki razbremenita vaše delo, izboljšata finančni donos in omogočita pridelavo večje količine kakovostne hrane ob doslednem varovanju narave.
+            </p>
+<br/>
+            <p class="section-subtitle">
+Pri tem se opiramo na <strong>več kot 20 let izkušenj</strong>, ko smo z ramo ob rami s slovenskimi kmeti obdelovali vse tipe zemljišč – od poljščin in travinj do zahtevnih trajnih nasadov. Dobro vemo, da zemlja ne dopušča bližnjic, zato globoko poznavanje gnojenja in obdelave tal nadgrajujemo z najsodobnejšo tehnologijo. Ne ponujamo vam le storitev, temveč <strong>zanesljivo in dolgoročno partnerstvo</strong>, ki tradicijo združuje z napredkom. Skupaj z vami gradimo uspešno in konkurenčno kmetijo, kjer merljivi rezultati zagotavljajo prihodnost na vaših tleh.
+            </p>
+<br/>
+            <p class="section-subtitle">
+Svoje znanje, ki vključuje najnovejšja agronomska znanja pridobivamo na poljih širem regije in v izpopolnjevanju v tujini. Smo eksperti, ki povezujemo teorijo agronomije z realnostjo najnovejših tehnologij.
+            </p>
+        </div>
+        
+    </div>
+</section>
 
 <!-- REFERENCES -->
 <section class="section section-alt" id="reference">
     <div class="container">
         <div class="section-header fade-in">
-            <h2 class="section-title">Kar pravijo naši partnerji</h2>
-            <p class="section-subtitle">Realnih rezultatov, resničnih kmetij</p>
+            <h2 class="section-title">Kar pravijo naši partnerji?</h2>
+            <p class="section-subtitle">Realni rezultati, resničnih kmetij!</p>
         </div>
         
         <div class="testimonials-grid">
             <div class="testimonial-card fade-in">
                 <div class="testimonial-header">
+                    <h4>Tadej Štoka</h4>
+                    <p class="testimonial-meta">vinogradnik na Krasu, 10 ha</p>
+                </div>
+                <p class="testimonial-content">"Ob vzpostavitvi preciznih analiz smo spoznali razlike ne samo med posameznimi nasadi/vinogradi temveč tudi kar je najpomembnejše znotraj njih samih. Zavedali smo se, da je sistem tal kompleksen a ne, da je tako kompleksen…jah varira vse od %humusa do podhranjenosti z fosforjem ter neredom z mikroelementi, kar povzroča kanabilizem. Po opravljeni analizah se naše sodelovanje nadaljuje z gnojenjem po mapah in svetovanjem o varstvu ter potencialni foliarni prehrani. Nadaljuje se z obdelavo tal, izbiro primernih setvenih mešanic za medvrstni prostor."</p>
+            </div>
+            
+            <div class="testimonial-card fade-in">
+                <div class="testimonial-header">
                     <h4>Janez Škrjanec</h4>
-                    <p class="testimonial-meta">Živinorejec, 60 ha travinje in polja</p>
+                    <p class="testimonial-meta">živinorejec, 60 ha travinje in polja</p>
                 </div>
-                <p class="testimonial-content">"Precizno travinje ni samo trend. Od analiz, gnojenja do svetovanja je Proagrar osebno prisoten. Rezultati so vidni – bolj enakomerna travinja, manjši stroški gnojenja."</p>
+                <p class="testimonial-content">"Precizno travinje? Seveda. Od preciznih analiz, izvajanju gnojenja ter svetovanju glede primernih gnojil ter skrbi za travinje prepuščamo Proagrarju. Jasno nam je, da je kakovost našega mleka in naših izdelkov odvisna tudi v veliki meri od krme, ki jo uživa naše govedo…hkrati pa pa je kakovost sena odvisna od naše predanosti travinju. Z uvedbo preciznega smo optimizirali razvozu org. gnojil (gnojevke) ter optimizirali (bolje rečeno minimalizirali) uporabo mineralnih gnojil."</p>
             </div>
             
             <div class="testimonial-card fade-in">
                 <div class="testimonial-header">
-                    <h4>Marko Novak</h4>
-                    <p class="testimonial-meta">Poljedelec, 200 ha polj</p>
+                    <h4>Franc Štih</h4>
+                    <p class="testimonial-meta">poljedelec, 200+ ha</p>
                 </div>
-                <p class="testimonial-content">"Precizno kmetijstvo pomeni bolj pametne odločitve. Vsako leto vem, kje je pridelek boljši. Stroški gnojenja so padli za 25%, pridelek pa je enak ali boljši."</p>
-            </div>
-            
-            <div class="testimonial-card fade-in">
-                <div class="testimonial-header">
-                    <h4>Katerina Jurščak</h4>
-                    <p class="testimonial-meta">Sadorejka, 15 ha sadovnjaka</p>
-                </div>
-                <p class="testimonial-content">"Sadovnjak je bolj zahteven. Proagrar je pripravil mape za vsako vrsto sadja posebej. Rezultat je bolj zdrava drevesa in jasna strategija za naslednja leta."</p>
+                <p class="testimonial-content">"Z uvedbo preciznega kmetijstva kamor sodi na osnovanih analizah nadaljnje precizno gnojenje ter kasneje precizna setev. Kot prvo je bistveno spoznati kakšna gnojila potrebujemo (premik od NPK sestavljenih) na samostjojna gnojila (DAP in ali KCL) kar omogoča optimalno zalaganje tal za maksimalni pridelek. V nadaljevanju prva gnojenja z mapami in prve setve z mapami."</p>
             </div>
         </div>
     </div>
@@ -275,8 +320,8 @@ nav_order: 1
 <section class="contact-section" id="kontakt">
     <div class="container">
         <div class="section-header fade-in">
-            <h2 class="section-title">Želite stika z nami?</h2>
-            <p class="section-subtitle">Oddajte svoje kontaktne podatke in vprašanje</p>
+            <h2 class="section-title">Stopite v stik z nami</h2>
+            <p class="section-subtitle">Oddajte svoje kontaktne podatke in oglasimo se v najkrajšem času</p>
         </div>
         
         <div class="contact-grid">
