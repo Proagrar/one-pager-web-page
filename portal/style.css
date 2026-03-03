@@ -1,0 +1,425 @@
+/*
+ * Portal Style — Proagrar Customer Portal
+ * Design tokens copied from main site (assets/css/base.css).
+ * Self-contained — does not import anything from the main site.
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Roboto:wght@700&display=swap');
+
+/* ===== TOKENS (copied from main site) ===== */
+:root {
+  --color-white:      #FFFFFF;
+  --color-blue:       #1c4592;
+  --color-green:      #c6d92d;
+  --color-text:       #1a1a1a;
+  --color-text-light: #6b7280;
+  --color-border:     #e5e7eb;
+  --color-bg-light:   #f9fafb;
+}
+
+/* ===== RESET ===== */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ===== BASE ===== */
+body {
+  font-family: 'Inter', sans-serif;
+  color: var(--color-text);
+  background: var(--color-bg-light);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* ===== CONTAINER (copied from main site) ===== */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  width: 100%;
+}
+
+/* ===== BUTTONS (copied from main site) ===== */
+.btn {
+  display: inline-block;
+  padding: 0.9rem 2rem;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border: 2px solid transparent;
+  font-size: 1rem;
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+}
+
+.btn-primary {
+  background: var(--color-green);
+  color: var(--color-text);
+  border-color: var(--color-green);
+}
+
+.btn-primary:hover {
+  background: #b5c326;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(198, 217, 45, 0.4);
+}
+
+/* ===== FORM ELEMENTS (copied from main site) ===== */
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: var(--color-text);
+  font-size: 0.95rem;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.9rem 1rem;
+  border: 2px solid var(--color-border);
+  border-radius: 0.6rem;
+  font-family: inherit;
+  font-size: 1rem;
+  transition: border-color 0.3s, box-shadow 0.3s;
+  background: white;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: var(--color-blue);
+  box-shadow: 0 0 0 3px rgba(28, 69, 146, 0.1);
+}
+
+/* ===== PORTAL NAV ===== */
+.portal-nav {
+  background: var(--color-blue);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.2);
+}
+
+.portal-nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+}
+
+.portal-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+}
+
+.portal-logo img {
+  height: 38px;
+  width: auto;
+  filter: brightness(0) invert(1);
+}
+
+.portal-logo-name {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.7);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.portal-user {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.portal-username {
+  font-size: 0.95rem;
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 500;
+}
+
+.btn-signout {
+  background: rgba(255, 255, 255, 0.15);
+  color: white;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 0.4rem;
+  padding: 0.45rem 1rem;
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  font-family: inherit;
+  transition: background 0.2s;
+}
+
+.btn-signout:hover {
+  background: rgba(255, 255, 255, 0.28);
+}
+
+/* ===== LOGIN PAGE ===== */
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #001337 0%, #1c4592 65%, #2d5fbb 100%);
+  padding: 2rem;
+}
+
+.login-card {
+  background: white;
+  border-radius: 1rem;
+  padding: 3rem;
+  width: 100%;
+  max-width: 440px;
+  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.35);
+}
+
+.login-logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.login-logo img {
+  height: 54px;
+  width: auto;
+}
+
+.login-title {
+  font-size: 1.55rem;
+  font-weight: 800;
+  color: var(--color-blue);
+  text-align: center;
+  margin-bottom: 0.4rem;
+}
+
+.login-subtitle {
+  font-size: 0.93rem;
+  color: var(--color-text-light);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.login-error {
+  background: #fee2e2;
+  color: #991b1b;
+  border: 1px solid #fca5a5;
+  border-radius: 0.5rem;
+  padding: 0.85rem 1rem;
+  font-size: 0.92rem;
+  margin-bottom: 1.25rem;
+  display: none;
+}
+
+.login-error.visible {
+  display: block;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 1rem;
+  background: var(--color-green);
+  color: var(--color-text);
+  border: none;
+  border-radius: 0.5rem;
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+  letter-spacing: 0.02em;
+}
+
+.login-btn:hover {
+  background: #b5c326;
+  transform: translateY(-2px);
+}
+
+/* ===== DASHBOARD MAIN ===== */
+.dashboard-main {
+  padding: 2.5rem 0 4rem;
+}
+
+.dashboard-greeting {
+  margin-bottom: 2rem;
+}
+
+.dashboard-greeting h1 {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: var(--color-blue);
+  margin-bottom: 0.25rem;
+}
+
+.dashboard-greeting p {
+  color: var(--color-text-light);
+  font-size: 0.95rem;
+}
+
+/* ===== SUMMARY CARDS ===== */
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.25rem;
+  margin-bottom: 2.5rem;
+}
+
+.summary-card {
+  background: white;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  border: 1px solid var(--color-border);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.summary-card-label {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--color-text-light);
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  margin-bottom: 0.5rem;
+}
+
+.summary-card-value {
+  font-size: 2.25rem;
+  font-weight: 800;
+  color: var(--color-blue);
+  line-height: 1;
+  margin-bottom: 0.3rem;
+}
+
+.summary-card-sub {
+  font-size: 0.82rem;
+  color: var(--color-text-light);
+}
+
+/* ===== SECTION TITLE (copied from main site) ===== */
+.section-title {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--color-blue);
+}
+
+/* ===== TABLE SECTIONS ===== */
+.table-section {
+  background: white;
+  border-radius: 0.75rem;
+  border: 1px solid var(--color-border);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+.table-header {
+  padding: 1.2rem 1.5rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.table-section table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.93rem;
+}
+
+.table-section thead th {
+  background: var(--color-bg-light);
+  padding: 0.8rem 1.5rem;
+  text-align: left;
+  font-weight: 700;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: var(--color-text-light);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.table-section tbody td {
+  padding: 1rem 1.5rem;
+  border-bottom: 1px solid var(--color-border);
+  color: var(--color-text);
+  vertical-align: middle;
+}
+
+.table-section tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.table-section tbody tr:hover {
+  background: var(--color-bg-light);
+}
+
+/* ===== STATUS BADGES ===== */
+.status-badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.status-completed {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.status-planned {
+  background: #dbeafe;
+  color: #1e40af;
+}
+
+/* ===== DOWNLOAD LINK ===== */
+.download-link {
+  color: var(--color-blue);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  transition: color 0.2s;
+}
+
+.download-link:hover {
+  color: #2557b8;
+  text-decoration: underline;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 900px) {
+  .summary-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 0 1rem;
+  }
+
+  .summary-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .portal-username {
+    display: none;
+  }
+
+  .table-section {
+    overflow-x: auto;
+  }
+
+  .login-card {
+    padding: 2rem 1.5rem;
+  }
+}

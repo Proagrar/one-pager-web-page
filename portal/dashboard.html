@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Nadzorna plošča — Proagrar portal</title>
+  <link rel="icon" type="image/svg+xml" href="Proagrar_LOGO-17.svg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="portal-nav" aria-label="Portalna navigacija">
+    <div class="container">
+      <div class="portal-nav-inner">
+        <a href="index.html" class="portal-logo">
+          <img src="Proagrar_LOGO-17.svg" alt="Proagrar">
+          <span class="portal-logo-name">Portal</span>
+        </a>
+        <div class="portal-user">
+          <span class="portal-username" id="customer-name"></span>
+          <button class="btn-signout" id="btn-signout" type="button">Odjava</button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main class="dashboard-main">
+    <div class="container">
+
+      <section class="dashboard-greeting" aria-label="Pozdrav">
+        <h1 id="greeting-text"></h1>
+        <p>Tukaj so vaši podatki o kmetijskih storitvah.</p>
+      </section>
+
+      <section aria-label="Povzetek storitev">
+        <div class="summary-grid">
+          <div class="summary-card">
+            <div class="summary-card-label">Poročila</div>
+            <div class="summary-card-value" id="stat-reports">—</div>
+            <div class="summary-card-sub">skupaj poročil</div>
+          </div>
+          <div class="summary-card">
+            <div class="summary-card-label">Površina</div>
+            <div class="summary-card-value" id="stat-ha">—</div>
+            <div class="summary-card-sub">ha obdelano</div>
+          </div>
+          <div class="summary-card">
+            <div class="summary-card-label">Parcele</div>
+            <div class="summary-card-value" id="stat-fields">—</div>
+            <div class="summary-card-sub">število parcel</div>
+          </div>
+          <div class="summary-card">
+            <div class="summary-card-label">Načrtovano</div>
+            <div class="summary-card-value" id="stat-planned">—</div>
+            <div class="summary-card-sub">načrtovane akcije</div>
+          </div>
+        </div>
+      </section>
+
+      <section aria-label="Poročila">
+        <div class="table-section">
+          <div class="table-header">
+            <h2 class="section-title">Poročila</h2>
+          </div>
+          <table>
+            <thead>
+              <tr>
+                <th>Naziv poročila</th>
+                <th>Datum</th>
+                <th>Kategorija</th>
+                <th>Prenos</th>
+              </tr>
+            </thead>
+            <tbody id="reports-body"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section aria-label="Akcije na polju">
+        <div class="table-section">
+          <div class="table-header">
+            <h2 class="section-title">Akcije na polju</h2>
+          </div>
+          <table>
+            <thead>
+              <tr>
+                <th>Akcija</th>
+                <th>Parcela</th>
+                <th>Površina</th>
+                <th>Datum</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody id="actions-body"></tbody>
+          </table>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <script type="module" src="portal.js"></script>
+</body>
+</html>

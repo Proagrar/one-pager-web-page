@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow">
+  <title>Prijava — Proagrar portal</title>
+  <link rel="icon" type="image/svg+xml" href="Proagrar_LOGO-17.svg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="login-page">
+    <div class="login-card">
+      <div class="login-logo">
+        <img src="Proagrar_LOGO-17.svg" alt="Proagrar">
+      </div>
+
+      <h1 class="login-title">Strankski portal</h1>
+      <p class="login-subtitle">Prijavite se za dostop do vaših podatkov</p>
+
+      <div class="login-error" id="login-error" role="alert" aria-live="polite"></div>
+
+      <form id="login-form" novalidate>
+        <div class="form-group">
+          <label for="email">E-pošta</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            autocomplete="email"
+            required
+            placeholder="vasa@eposta.si"
+          >
+        </div>
+        <div class="form-group">
+          <label for="password">Geslo</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            autocomplete="current-password"
+            required
+            placeholder="••••••••"
+          >
+        </div>
+        <button type="submit" class="login-btn">Prijava</button>
+      </form>
+    </div>
+  </main>
+
+  <script type="module">
+    import { login } from './auth.js';
+
+    const form     = document.getElementById('login-form');
+    const errorEl  = document.getElementById('login-error');
+    const emailEl  = document.getElementById('email');
+    const passEl   = document.getElementById('password');
+
+    function clearError() {
+      errorEl.textContent = '';
+      errorEl.classList.remove('visible');
+    }
+
+    emailEl.addEventListener('input', clearError);
+    passEl.addEventListener('input', clearError);
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      const email    = emailEl.value.trim();
+      const password = passEl.value;
+
+      if (login(email, password)) {
+        window.location.href = 'dashboard.html#' + encodeURIComponent(email);
+      } else {
+        errorEl.textContent = 'Napačna e-pošta ali geslo. Prosimo, poskusite znova.';
+        errorEl.classList.add('visible');
+        passEl.value = '';
+        passEl.focus();
+      }
+    });
+  </script>
+</body>
+</html>
