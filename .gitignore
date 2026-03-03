@@ -9,6 +9,8 @@ Gemfile.lock
 # Dependencies
 node_modules/
 npm-debug.log
+vendor/
+.bundle/
 
 # IDE
 .vscode/

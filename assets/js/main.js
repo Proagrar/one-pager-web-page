@@ -1,6 +1,20 @@
+// FAQ accordion
+function toggleFaq(btn) {
+    var item = btn.closest('.faq-item');
+    var isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(function(el) {
+        el.classList.remove('open');
+        el.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+    });
+    if (!isOpen) {
+        item.classList.add('open');
+        btn.setAttribute('aria-expanded', 'true');
+    }
+}
+
 // Lead form (GitHub Pages safe): POST to endpoint if provided, otherwise mailto fallback
 (function () {
-  const form = document.getElementById("leadForm");
+  const form = document.getElementById("contactForm");
   if (!form) return;
 
   const statusEl = document.getElementById("formStatus");
