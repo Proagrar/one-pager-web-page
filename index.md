@@ -123,7 +123,7 @@ nav_order: 1
             <div class="testimonial-card fade-in">
                 <div class="testimonial-header">
                     <div class="testimonial-avatar" style="background: #1c4592;">
-                        <img src="{{ '/assets/img/JanezSkrjanec.svg' | relative_url }}" alt="Janez Škrjanec" width="48" height="48">
+                        <img src="{{ '/assets/img/JanezSkrjanec.jpg' | relative_url }}" alt="Janez Škrjanec" width="48" height="48">
                     </div>
                     <div class="testimonial-identity">
                         <h4>Janez Škrjanec</h4>
@@ -137,7 +137,7 @@ nav_order: 1
             <div class="testimonial-card fade-in">
                 <div class="testimonial-header">
                     <div class="testimonial-avatar" style="background: #001337;">
-                        <img src="{{ '/assets/img/FrancStih.svg' | relative_url }}" alt="Franc Štih" width="48" height="48">
+                        <img src="{{ '/assets/img/FrancStih.jpg' | relative_url }}" alt="Franc Štih" width="48" height="48">
                     </div>
                     <div class="testimonial-identity">
                         <h4>Franc Štih</h4>
@@ -151,7 +151,7 @@ nav_order: 1
             <div class="testimonial-card fade-in">
                 <div class="testimonial-header">
                     <div class="testimonial-avatar" style="background: #4a6b1a;">
-                        <img src="{{ '/assets/img/TadejStoka.svg' | relative_url }}" alt="Tadej Štoka" width="48" height="48">
+                        <img src="{{ '/assets/img/TadejStoka.jpg' | relative_url }}" alt="Tadej Štoka" width="48" height="48">
                     </div>
                     <div class="testimonial-identity">
                         <h4>Tadej Štoka</h4>
