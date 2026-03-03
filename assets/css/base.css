@@ -79,16 +79,6 @@
             filter: brightness(0) invert(1);
         }
 
-        .header.scrolled .nav .btn-nav {
-            background: var(--color-green);
-            color: var(--color-text) !important;
-        }
-
-        .header.scrolled .nav .btn-nav:hover {
-            background: #afc226;
-            box-shadow: 0 6px 20px rgba(198, 217, 45, 0.4);
-        }
-        
         .container {
             max-width: 1280px;
             margin: 0 auto;
@@ -151,25 +141,6 @@
         
         .nav a:hover::after {
             width: 100%;
-        }
-        
-        .nav .btn-nav {
-            background: var(--color-blue);
-            color: white;
-            padding: 0.7rem 1.75rem;
-            border-radius: 0.5rem;
-            font-weight: 600;
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-        
-        .nav .btn-nav:hover {
-            background: #153a7a;
-            transform: translateY(-2px);
-            box-shadow: 0 6px 20px rgba(28, 69, 146, 0.4);
-        }
-        
-        .nav .btn-nav::after {
-            display: none;
         }
         
         .menu-toggle {
@@ -437,9 +408,6 @@
             object-fit: contain;
         }
 
-        .feature-icon {
-            display: none;
-        }
 
         .feature-card h3 {
             color: var(--color-blue);
@@ -544,185 +512,6 @@
             line-height: 1.7;
         }
 
-        /* HOW IT WORKS - OLD (unused) */
-        .process-step {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 5rem;
-            align-items: center;
-            margin-bottom: 6rem;
-        }
-        
-        .process-step:nth-child(even) .process-content {
-            order: 2;
-        }
-        
-        .process-step:nth-child(even) .process-image {
-            order: 1;
-        }
-        
-        .process-content {
-            padding: 2.5rem;
-        }
-        
-        .step-number {
-            display: inline-block;
-            background: var(--color-green);
-            color: var(--color-text);
-            width: 60px;
-            height: 60px;
-            border-radius: 50%;
-            text-align: center;
-            line-height: 60px;
-            font-weight: 800;
-            font-size: 1.75rem;
-            margin-bottom: 2rem;
-            box-shadow: 0 4px 15px rgba(198, 217, 45, 0.3);
-        }
-        
-        .process-content h3 {
-            font-size: 2.25rem;
-            color: var(--color-blue);
-            margin-bottom: 1.5rem;
-            font-weight: 700;
-        }
-        
-        .process-content p {
-            font-size: 1.2rem;
-            color: var(--color-text-light);
-            line-height: 1.9;
-        }
-        
-        .process-image {
-            border-radius: 1.25rem;
-            overflow: hidden;
-            box-shadow: 0 15px 50px rgba(0,0,0,0.12);
-            position: relative;
-        }
-        
-        .process-image::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: linear-gradient(135deg, rgba(28, 69, 146, 0.1), transparent);
-            opacity: 0;
-            transition: opacity 0.4s;
-        }
-        
-        .process-image:hover::after {
-            opacity: 1;
-        }
-        
-        .process-image img {
-            width: 100%;
-            height: 450px;
-            object-fit: cover;
-            transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-        
-        .process-image:hover img {
-            transform: scale(1.08);
-        }
-        
-        /* SERVICES */
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(370px, 1fr));
-            gap: 2.5rem;
-        }
-        
-        .service-card {
-            background: white;
-            border-radius: 1.25rem;
-            overflow: hidden;
-            border: 1px solid var(--color-border);
-            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-        }
-        
-        .service-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 15px 40px rgba(0,0,0,0.12);
-        }
-        
-        .service-card-header {
-            background: linear-gradient(135deg, var(--color-blue), #2557b8);
-            color: white;
-            padding: 2.5rem;
-            position: relative;
-            overflow: hidden;
-        }
-        
-        .service-card-header::before {
-            content: '';
-            position: absolute;
-            top: -50%;
-            right: -50%;
-            width: 200%;
-            height: 200%;
-            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
-        }
-        
-        .service-card-header h3 {
-            font-size: 1.6rem;
-            margin-bottom: 0.5rem;
-            font-weight: 700;
-            position: relative;
-            z-index: 2;
-        }
-        
-        .service-card-body {
-            padding: 2.5rem;
-        }
-        
-        .service-card-body p {
-            color: var(--color-text-light);
-            line-height: 1.9;
-            font-size: 1.05rem;
-        }
-        
-        /* PARTNERS */
-        .partners-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 2.5rem;
-            align-items: center;
-        }
-        
-        .partner-item {
-            background: white;
-            padding: 2.5rem;
-            border-radius: 1rem;
-            text-align: center;
-            border: 2px solid var(--color-border);
-            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-            min-height: 140px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        
-        .partner-item:hover {
-            border-color: var(--color-blue);
-            transform: translateY(-5px);
-            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
-        }
-        
-        .partner-item img {
-            max-width: 100%;
-            height: auto;
-            opacity: 0.8;
-            transition: opacity 0.3s;
-            filter: grayscale(100%);
-        }
-        
-        .partner-item:hover img {
-            opacity: 1;
-            filter: grayscale(0%);
-        }
-        
         /* TESTIMONIALS */
         #reference {
             padding-top: 3rem;

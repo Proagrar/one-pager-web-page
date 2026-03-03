@@ -61,7 +61,7 @@ nav_order: 1
             </div>
             <div class="feature-card fade-in">
                 <div class="feature-badge" style="background: #001337;">
-                    <img src="{{ '/assets/img/icon_nizjistroski.svg' | relative_url }}" alt="Nižji stroški" width="28" height="28">
+                    <img src="{{ '/assets/img/Icon_nizjistroski.svg' | relative_url }}" alt="Nižji stroški" width="28" height="28">
                 </div>
                 <h3>Nižji stroški</h3>
                 <p>Porabite le toliko, kot je potrebno.</p>
@@ -202,73 +202,6 @@ nav_order: 1
     </div>
 </section>
 
-<!-- SERVICES -->
-<!-- 
-<section class="section" id="storitve">
-    <div class="container">
-        <div class="section-header fade-in">
-            <h2 class="section-title">Storitve preciznega kmetijstva</h2>
-            <p class="section-subtitle">Podatki imajo vrednost, ko postanejo jasna priporočila in uporabne mape</p>
-        </div>
-        
-        <div class="services-grid">
-            <div class="service-card fade-in">
-                <div class="service-card-header">
-                    <h3>Segmentacija in vzorčenje</h3>
-                </div>
-                <div class="service-card-body">
-                    <p>Strokovnjaki delijo vaš pridelek polje glede na produktivnost. Vzamemo reprezentativne vzorce tal za natančno analizo.</p>
-                </div>
-            </div>
-            
-            <div class="service-card fade-in">
-                <div class="service-card-header">
-                    <h3>Laboratorijska analiza</h3>
-                </div>
-                <div class="service-card-body">
-                    <p>Vsak vzorec je analiziran na več kot 40 parametrov. Rezultati kažejo točne potrebe po gnojilih.</p>
-                </div>
-            </div>
-            
-            <div class="service-card fade-in">
-                <div class="service-card-header">
-                    <h3>Izračun potreb in poročilo</h3>
-                </div>
-                <div class="service-card-body">
-                    <p>Podatke preoblikujemo v praktična priporočila. Jasno poročilo prikazuje potrebe za vsak segment.</p>
-                </div>
-            </div>
-            
-            <div class="service-card fade-in">
-                <div class="service-card-header">
-                    <h3>Gnojilne mape</h3>
-                </div>
-                <div class="service-card-body">
-                    <p>Mape so pripravljene za GPS-navodeno aplikacijo. Kmetje tocno vedo, kaj in koliko gnojila dodati.</p>
-                </div>
-            </div>
-            
-            <div class="service-card fade-in">
-                <div class="service-card-header">
-                    <h3>Izvedba in svetovanje</h3>
-                </div>
-                <div class="service-card-body">
-                    <p>Tehnična podpora pri aplikaciji map. Redni pregledi polja in svetovanje za maksimalne rezultate.</p>
-                </div>
-            </div>
-            
-            <div class="service-card fade-in">
-                <div class="service-card-header">
-                    <h3>Pogodbeni monitoring</h3>
-                </div>
-                <div class="service-card-body">
-                    <p>Spremljanje rezultatov skozi sezono. Analiza pridelka za izboljšave v naslednjem letu.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
- -->
 <!-- FAQ SECTION -->
 <section class="faq-section" id="faq">
     <div class="container">
