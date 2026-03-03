@@ -33,7 +33,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         if (target) {
             const header = document.getElementById('header');
             const headerHeight = header ? header.offsetHeight : 0;
-            const targetPosition = target.offsetTop - headerHeight - 20;
+            const targetPosition = target.offsetTop - headerHeight;
             window.scrollTo({
                 top: targetPosition,
                 behavior: 'smooth'
