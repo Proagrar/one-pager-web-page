@@ -428,6 +428,13 @@
             color: white;
             font-size: 1.3rem;
             font-weight: 800;
+            overflow: hidden;
+        }
+
+        .feature-badge img {
+            width: 80px;
+            height: 80px;
+            object-fit: contain;
         }
 
         .feature-icon {
@@ -508,9 +515,19 @@
             width: 180px;
             height: 180px;
             border-radius: 50%;
-            background: rgba(255, 255, 255, 0.1);
-            border: 3px solid rgba(255, 255, 255, 0.25);
+            background: transparent;
+            border: none;
             margin: 0 auto 1.5rem;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .process-circle-img img {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
         }
 
         .process-card h3 {
@@ -769,8 +786,8 @@
         }
 
         .testimonial-avatar {
-            width: 52px;
-            height: 52px;
+            width: 62px;
+            height: 62px;
             border-radius: 50%;
             flex-shrink: 0;
             display: flex;
@@ -780,6 +797,16 @@
             font-family: 'Inter', sans-serif;
             font-size: 0.85rem;
             font-weight: 700;
+            overflow: hidden;
+        }
+
+        .testimonial-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border: none;
+            outline: none;
+            display: block;
         }
 
         .testimonial-identity h4 {

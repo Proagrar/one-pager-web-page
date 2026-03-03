@@ -53,24 +53,30 @@ nav_order: 1
         </div>
         <div class="features-grid">
             <div class="feature-card fade-in">
-                <div class="feature-badge" style="background: #1c4592;">+20%</div>
+                <div class="feature-badge" style="background: #1c4592;">
+                    <img src="{{ '/assets/img/icon_vecjipridelek.svg' | relative_url }}" alt="Večji pridelek" width="28" height="28">
+                </div>
                 <h3>Večji pridelek</h3>
                 <p>Natančnost za večjo donosnost.</p>
             </div>
             <div class="feature-card fade-in">
-                <div class="feature-badge" style="background: #001337;">-20%</div>
+                <div class="feature-badge" style="background: #001337;">
+                    <img src="{{ '/assets/img/icon_nizjistroski.svg' | relative_url }}" alt="Nižji stroški" width="28" height="28">
+                </div>
                 <h3>Nižji stroški</h3>
                 <p>Porabite le toliko, kot je potrebno.</p>
             </div>
             <div class="feature-card fade-in">
                 <div class="feature-badge" style="background: #4a6b1a;">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17 8C8 10 5.9 16.17 3.82 21.34L5.71 22l1-2.3A4.49 4.49 0 0 0 8 20C19 20 22 3 22 3c-1 2-8 2-8 2 2-1.5 4-3.5 4-3.5-9 1-10 7-10 7C6.86 6.93 6 6 6 6S5 11 8 12c0 0-.5 3 2 3.5 0 0 3 .5 4.5-1.5 0 0 1 3-3.5 3C9 17 7.5 14.5 7 13c0 0-3 5 3 7 0 0 5 1 8-5s3-9 3-9-3 4-4 2z"/></svg>
+                    <img src="{{ '/assets/img/icon_manjsivpliv.svg' | relative_url }}" alt="Manjši vpliv na okolje" width="28" height="28">
                 </div>
                 <h3>Manjši vpliv na okolje</h3>
                 <p>Varno z naravo, varno za prihodnost.</p>
             </div>
             <div class="feature-card fade-in">
-                <div class="feature-badge" style="background: #3d5a0a;">10x</div>
+                <div class="feature-badge" style="background: #3d5a0a;">
+                    <img src="{{ '/assets/img/icon_donos.svg' | relative_url }}" alt="Donos na investicijo" width="28" height="28">
+                </div>
                 <h3>Donos na investicijo</h3>
                 <p>Investicija, ki se bogato obrestuje.</p>
             </div>
@@ -116,7 +122,9 @@ nav_order: 1
         <div class="testimonials-grid">
             <div class="testimonial-card fade-in">
                 <div class="testimonial-header">
-                    <div class="testimonial-avatar" style="background: #1c4592;">JŠ</div>
+                    <div class="testimonial-avatar" style="background: #1c4592;">
+                        <img src="{{ '/assets/img/JanezSkrjanec.svg' | relative_url }}" alt="Janez Škrjanec" width="48" height="48">
+                    </div>
                     <div class="testimonial-identity">
                         <h4>Janez Škrjanec</h4>
                         <p class="testimonial-meta">Živinorejec · 60 ha travinje</p>
@@ -128,7 +136,9 @@ nav_order: 1
 
             <div class="testimonial-card fade-in">
                 <div class="testimonial-header">
-                    <div class="testimonial-avatar" style="background: #001337;">FŠ</div>
+                    <div class="testimonial-avatar" style="background: #001337;">
+                        <img src="{{ '/assets/img/FrancStih.svg' | relative_url }}" alt="Franc Štih" width="48" height="48">
+                    </div>
                     <div class="testimonial-identity">
                         <h4>Franc Štih</h4>
                         <p class="testimonial-meta">Poljedelec · 200+ ha</p>
@@ -140,7 +150,9 @@ nav_order: 1
 
             <div class="testimonial-card fade-in">
                 <div class="testimonial-header">
-                    <div class="testimonial-avatar" style="background: #4a6b1a;">TŠ</div>
+                    <div class="testimonial-avatar" style="background: #4a6b1a;">
+                        <img src="{{ '/assets/img/TadejStoka.svg' | relative_url }}" alt="Tadej Štoka" width="48" height="48">
+                    </div>
                     <div class="testimonial-identity">
                         <h4>Tadej Štoka</h4>
                         <p class="testimonial-meta">Trajni nasadi · Kras, 10 ha</p>
@@ -148,7 +160,6 @@ nav_order: 1
                 </div>
                 <p class="testimonial-content">"Ob vzpostavitvi preciznih analiz smo spoznali razlike ne samo med posameznimi nasadi/vinogradi temveč tudi kar je najpomembnejše znotraj njih samih. Zavedali smo se, da je sistem tal kompleksen a ne, da je tako kompleksen…jah varira vse od %humusa do podhranjenosti z fosforjem ter neredom z mikroelementi. Po opravljeni analizah se naše sodelovanje nadaljuje z gnojenjem po mapah in svetovanjem o varstvu ter potencialni foliarni prehrani."</p>
                 <p class="testimonial-summary">Opazen napredek, kar preseneca, pozitivno</p>
-            </div>
             </div>
         </div>
     </div>
@@ -163,27 +174,27 @@ nav_order: 1
 
         <div class="process-grid">
             <div class="process-card fade-in">
-                <div class="process-circle-img"></div>
+                <div class="process-circle-img"><img src="{{ '/assets/img/Segmentacija in vzorcenje.svg' | relative_url }}" alt="Segmentacija in vzorčenje tal"></div>
                 <h3>Segmentacija in vzorčenje tal</h3>
                 <p>Z analizo večletnih satelitskih posnetkov in rastnih indeksov natančno razmejimo vaše polje na predele z visoko, povprečno in nižjo produktivnostjo. Naš agrarni tehnik na podlagi teh podatkov določi segmente, kjer nato z preciznostjo odvzamemo več vzorcev tal. Tako dobimo jasen vpogled v fizikalno in kemijsko sestavo vsakega segmenta polja posebej (strukturo tal, vodno kapaciteto, hranilne potrebe ...).</p>
             </div>
             <div class="process-card fade-in">
-                <div class="process-circle-img"></div>
+                <div class="process-circle-img"><img src="{{ '/assets/img/Obdelava podatkov in optimizacija.svg' | relative_url }}" alt="Obdelava podatkov in optimizacija"></div>
                 <h3>Obdelava podatkov in optimizacija</h3>
                 <p>Vzorci zemlje v najkrajšem času potujejo v laboratorij. Ob prispelih podatkih iz laboratorija se opravi izračun potrebe po vnosu elementov, pri čemer prvo vnesemo plan vnosa organskih gnojil, kar generira jasen izračun in priporočilo o gnojenju posevka za naslednjo sezono. Poročilo je jasno, enostavno ter vključuje bistvene elemente v tleh.</p>
             </div>
             <div class="process-card fade-in">
-                <div class="process-circle-img"></div>
+                <div class="process-circle-img"><img src="{{ '/assets/img/Prijava gnojilnih in setvenih map.svg' | relative_url }}" alt="Priprava gnojilnih in setvenih map"></div>
                 <h3>Priprava gnojilnih in setvenih map</h3>
                 <p>Bistveno je razumevanje podatkov ter personalizacija vsakega polja, znotraj večjih polj pa posameznega segmenta znotraj polja. Predstavljajte si, da je vsak predel polja, travnika, vinograda ali sadovnjaka preskrbljen optimalno, da na delih z večjim potencialom ne primanjkuje hranil, medtem ko na drugih delih preprečimo presežke.</p>
             </div>
             <div class="process-card fade-in">
-                <div class="process-circle-img"></div>
+                <div class="process-circle-img"><img src="{{ '/assets/img/Storitve preciznega kmetijstva.svg' | relative_url }}" alt="Storitve preciznega kmetijstva"></div>
                 <h3>Storitve preciznega kmetijstva</h3>
                 <p>Vaša kmetija potrebuje uslugo gnojenja, setve, zaščite posevka? Za vas lahko to pravimo mi, s podporo najnovejše mehanizacije in strokovnim znanjem.</p>
             </div>
             <div class="process-card fade-in">
-                <div class="process-circle-img"></div>
+                <div class="process-circle-img"><img src="{{ '/assets/img/Strokovna podpora in svetovanje.svg' | relative_url }}" alt="Strokovna podpora in svetovanje"></div>
                 <h3>Strokovna podpora in svetovanje</h3>
                 <p>Precizna analiza tal je začetek procesa. V času od analize vam je potreben nekdo, ki razume tla, elemente v tleh, potrebe posevka in doseganje najvišjih standardov v proizvodnji z uporabo najnovejših tehnologij za ustvarjanje presežkov.</p>
             </div>
