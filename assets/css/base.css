@@ -599,6 +599,10 @@
             display: block;
         }
 
+        .avatar-tadej {
+            transform: rotate(-20deg) scale(1.2);
+        }
+
         .testimonial-identity h4 {
             color: var(--color-blue);
             font-size: 14px;

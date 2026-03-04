@@ -151,7 +151,7 @@ nav_order: 1
             <div class="testimonial-card fade-in">
                 <div class="testimonial-header">
                     <div class="testimonial-avatar" style="background: #4a6b1a;">
-                        <img src="{{ '/assets/img/TadejStoka.jpg' | relative_url }}" alt="Tadej Štoka" width="48" height="48">
+                        <img src="{{ '/assets/img/TadejStoka.jpg' | relative_url }}" alt="Tadej Štoka" width="48" height="48" class="avatar-tadej">
                     </div>
                     <div class="testimonial-identity">
                         <h4>Tadej Štoka</h4>
