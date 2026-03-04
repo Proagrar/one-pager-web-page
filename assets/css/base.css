@@ -1047,8 +1047,8 @@
                 display: none;
                 position: fixed;
                 top: 85px;
-                left: 0;
                 right: 0;
+                left: 33.33%;
                 z-index: 999;
                 background: white;
                 flex-direction: column;
@@ -1135,6 +1135,16 @@
             
             .process-image img {
                 height: 320px;
+            }
+
+            .process-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .process-circle-img,
+            .process-circle-img img {
+                width: 140px;
+                height: 140px;
             }
 
             .contact-cols {
