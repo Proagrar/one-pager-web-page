@@ -1050,15 +1050,22 @@
                 right: 0;
                 left: 33.33%;
                 z-index: 999;
-                background: white;
+                background: rgba(0, 19, 55, 0.95);
+                backdrop-filter: blur(12px);
+                -webkit-backdrop-filter: blur(12px);
                 flex-direction: column;
                 padding: 2.5rem;
-                box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+                box-shadow: -4px 8px 32px rgba(0, 0, 0, 0.35);
                 gap: 2rem;
+                border-radius: 1rem 0 0 1rem;
             }
 
             .nav a {
-                color: var(--color-text);
+                color: rgba(255, 255, 255, 0.9);
+            }
+
+            .nav a:hover {
+                color: var(--color-green);
             }
             
             .nav.active {
