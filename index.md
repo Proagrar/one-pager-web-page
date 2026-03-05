@@ -98,6 +98,8 @@ nav_order: 1
                 <img src="{{ '/assets/img/Logos/LOGO-KGZ-LITIJA.svg' | relative_url }}" alt="KGZ Litija" loading="lazy">
                 <img src="{{ '/assets/img/Logos/Logo-Skrjanec.jpg' | relative_url }}" alt="Škrjanec" loading="lazy">
                 <img src="{{ '/assets/img/Logos/Logo-ekosirarna.jpg' | relative_url }}" alt="Ekosirarna" loading="lazy">
+            </div>
+            <div class="logo-page">
                 <img src="{{ '/assets/img/Logos/logo-karlovcek.jpg' | relative_url }}" alt="Karlovček" loading="lazy">
                 <img src="{{ '/assets/img/Logos/Logo-Colja.svg' | relative_url }}" alt="Colja" loading="lazy">
                 <img src="{{ '/assets/img/Logos/Logo-medle.svg' | relative_url }}" alt="Medle" loading="lazy">
@@ -105,6 +107,7 @@ nav_order: 1
         </div>
         <div class="logo-dots" id="logo-dots">
             <button class="logo-dot active" data-index="0" aria-label="Stran 1"></button>
+            <button class="logo-dot" data-index="1" aria-label="Stran 2"></button>
         </div>
     </div>
     <script>

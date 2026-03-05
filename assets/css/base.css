@@ -529,8 +529,8 @@
             display: none;
             justify-content: center;
             align-items: center;
-            gap: 4rem;
-            flex-wrap: wrap;
+            gap: 2.5rem;
+            flex-wrap: nowrap;
             min-height: 80px;
         }
 
