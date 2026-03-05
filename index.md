@@ -99,6 +99,8 @@ nav_order: 1
                 <img src="{{ '/assets/img/Logos/Logo-Skrjanec.jpg' | relative_url }}" alt="Škrjanec" loading="lazy">
                 <img src="{{ '/assets/img/Logos/Logo-ekosirarna.jpg' | relative_url }}" alt="Ekosirarna" loading="lazy">
                 <img src="{{ '/assets/img/Logos/logo-karlovcek.jpg' | relative_url }}" alt="Karlovček" loading="lazy">
+                <img src="{{ '/assets/img/Logos/Logo-Colja.svg' | relative_url }}" alt="Colja" loading="lazy">
+                <img src="{{ '/assets/img/Logos/Logo-medle.svg' | relative_url }}" alt="Medle" loading="lazy">
             </div>
         </div>
         <div class="logo-dots" id="logo-dots">
