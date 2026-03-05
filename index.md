@@ -305,6 +305,7 @@ nav_order: 1
         <div class="contact-form-grid fade-in">
             <form onsubmit="handleSubmit(event)" id="contactForm">
                 <input type="hidden" name="access_key" value="d48cf0c9-69b4-4a70-a2ab-3a19ce9902aa">
+                <input type="checkbox" name="botcheck" style="display:none">
                 <div class="contact-cols">
                     <!-- Left column -->
                     <div class="contact-left">
