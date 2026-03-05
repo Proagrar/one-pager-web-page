@@ -539,8 +539,8 @@
         }
 
         .logo-page img {
-            height: 60px;
-            width: auto;
+            width: 180px;
+            height: 80px;
             object-fit: contain;
             filter: grayscale(100%);
             opacity: 0.55;
