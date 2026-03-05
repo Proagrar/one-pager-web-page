@@ -92,31 +92,34 @@ nav_order: 1
         </div>
     </div>
 
-    <div class="logo-ticker">
-        <div class="logo-track">
-            <img src="{{ '/assets/img/partner-agro.svg' | relative_url }}" alt="Agro" loading="lazy">
-            <img src="{{ '/assets/img/partner-brodnjak.svg' | relative_url }}" alt="Brodnjak" loading="lazy">
-            <img src="{{ '/assets/img/partner-colnar.svg' | relative_url }}" alt="Colnar" loading="lazy">
-            <img src="{{ '/assets/img/partner-ego.svg' | relative_url }}" alt="Ego" loading="lazy">
-            <img src="{{ '/assets/img/partner-eurosad.svg' | relative_url }}" alt="Eurosad" loading="lazy">
-            <img src="{{ '/assets/img/partner-hpg.svg' | relative_url }}" alt="HPG" loading="lazy">
-            <img src="{{ '/assets/img/partner-karlovcek.svg' | relative_url }}" alt="Karlovček" loading="lazy">
-            <img src="{{ '/assets/img/partner-sember.svg' | relative_url }}" alt="Sember" loading="lazy">
-            <img src="{{ '/assets/img/partner-stoka.svg' | relative_url }}" alt="Štoka" loading="lazy">
-            <img src="{{ '/assets/img/partner-tomac.svg' | relative_url }}" alt="Tomač" loading="lazy">
-            <!-- duplicate for seamless loop -->
-            <img src="{{ '/assets/img/partner-agro.svg' | relative_url }}" alt="Agro" loading="lazy">
-            <img src="{{ '/assets/img/partner-brodnjak.svg' | relative_url }}" alt="Brodnjak" loading="lazy">
-            <img src="{{ '/assets/img/partner-colnar.svg' | relative_url }}" alt="Colnar" loading="lazy">
-            <img src="{{ '/assets/img/partner-ego.svg' | relative_url }}" alt="Ego" loading="lazy">
-            <img src="{{ '/assets/img/partner-eurosad.svg' | relative_url }}" alt="Eurosad" loading="lazy">
-            <img src="{{ '/assets/img/partner-hpg.svg' | relative_url }}" alt="HPG" loading="lazy">
-            <img src="{{ '/assets/img/partner-karlovcek.svg' | relative_url }}" alt="Karlovček" loading="lazy">
-            <img src="{{ '/assets/img/partner-sember.svg' | relative_url }}" alt="Sember" loading="lazy">
-            <img src="{{ '/assets/img/partner-stoka.svg' | relative_url }}" alt="Štoka" loading="lazy">
-            <img src="{{ '/assets/img/partner-tomac.svg' | relative_url }}" alt="Tomač" loading="lazy">
+    <div class="logo-slider-wrap">
+        <div id="logo-pages">
+            <div class="logo-page active">
+                <img src="{{ '/assets/img/Logos/LOGO-KGZ-LITIJA.svg' | relative_url }}" alt="KGZ Litija" loading="lazy">
+                <img src="{{ '/assets/img/Logos/Logo-Skrjanec.jpg' | relative_url }}" alt="Škrjanec" loading="lazy">
+                <img src="{{ '/assets/img/Logos/Logo-ekosirarna.jpg' | relative_url }}" alt="Ekosirarna" loading="lazy">
+                <img src="{{ '/assets/img/Logos/logo-karlovcek.jpg' | relative_url }}" alt="Karlovček" loading="lazy">
+            </div>
+        </div>
+        <div class="logo-dots" id="logo-dots">
+            <button class="logo-dot active" data-index="0" aria-label="Stran 1"></button>
         </div>
     </div>
+    <script>
+    (function() {
+        var dots = document.querySelectorAll('.logo-dot');
+        var pages = document.querySelectorAll('.logo-page');
+        dots.forEach(function(dot) {
+            dot.addEventListener('click', function() {
+                var idx = parseInt(this.dataset.index);
+                pages.forEach(function(p) { p.classList.remove('active'); });
+                dots.forEach(function(d) { d.classList.remove('active'); });
+                pages[idx].classList.add('active');
+                dots[idx].classList.add('active');
+            });
+        });
+    })();
+    </script>
 
     <div class="container">
         <div class="testimonials-grid">
