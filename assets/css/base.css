@@ -525,17 +525,29 @@
             margin-bottom: 2.5rem;
         }
 
+        #logo-pages {
+            position: relative;
+            height: 80px;
+        }
+
         .logo-page {
-            display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            display: flex;
             justify-content: center;
             align-items: center;
             gap: 2.5rem;
             flex-wrap: nowrap;
-            min-height: 80px;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.45s ease;
         }
 
         .logo-page.active {
-            display: flex;
+            opacity: 1;
+            pointer-events: auto;
         }
 
         .logo-page img {
@@ -1081,7 +1093,10 @@
             }
             
             .nav {
-                display: none;
+                display: flex;
+                flex-direction: column;
+                max-height: 0;
+                overflow: hidden;
                 position: fixed;
                 top: 85px;
                 right: 0;
@@ -1090,11 +1105,11 @@
                 background: rgba(0, 19, 55, 0.95);
                 backdrop-filter: blur(12px);
                 -webkit-backdrop-filter: blur(12px);
-                flex-direction: column;
-                padding: 2.5rem;
+                padding: 0 2.5rem;
                 box-shadow: -4px 8px 32px rgba(0, 0, 0, 0.35);
                 gap: 2rem;
                 border-radius: 1rem 0 0 1rem;
+                transition: max-height 0.35s ease, padding 0.35s ease;
             }
 
             .nav a {
@@ -1106,7 +1121,8 @@
             }
             
             .nav.active {
-                display: flex;
+                max-height: 400px;
+                padding: 2.5rem;
             }
             
             .menu-toggle {
