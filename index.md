@@ -118,9 +118,13 @@ nav_order: 1
 
         function goTo(idx) {
             if (idx < 0 || idx >= pages.length) return;
-            pages.forEach(function(p) { p.classList.remove('active'); });
-            dots.forEach(function(d) { d.classList.remove('active'); });
+            var forward = idx > current;
+            pages.forEach(function(p, i) {
+                p.classList.remove('active', 'prev');
+                if (i < idx) p.classList.add('prev');
+            });
             pages[idx].classList.add('active');
+            dots.forEach(function(d) { d.classList.remove('active'); });
             dots[idx].classList.add('active');
             current = idx;
         }
