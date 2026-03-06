@@ -114,15 +114,35 @@ nav_order: 1
     (function() {
         var dots = document.querySelectorAll('.logo-dot');
         var pages = document.querySelectorAll('.logo-page');
+        var current = 0;
+
+        function goTo(idx) {
+            if (idx < 0 || idx >= pages.length) return;
+            pages.forEach(function(p) { p.classList.remove('active'); });
+            dots.forEach(function(d) { d.classList.remove('active'); });
+            pages[idx].classList.add('active');
+            dots[idx].classList.add('active');
+            current = idx;
+        }
+
         dots.forEach(function(dot) {
             dot.addEventListener('click', function() {
-                var idx = parseInt(this.dataset.index);
-                pages.forEach(function(p) { p.classList.remove('active'); });
-                dots.forEach(function(d) { d.classList.remove('active'); });
-                pages[idx].classList.add('active');
-                dots[idx].classList.add('active');
+                goTo(parseInt(this.dataset.index));
             });
         });
+
+        // Touch swipe
+        var touchStartX = 0;
+        var container = document.getElementById('logo-pages');
+        container.addEventListener('touchstart', function(e) {
+            touchStartX = e.touches[0].clientX;
+        }, { passive: true });
+        container.addEventListener('touchend', function(e) {
+            var diff = touchStartX - e.changedTouches[0].clientX;
+            if (Math.abs(diff) > 40) {
+                goTo(diff > 0 ? current + 1 : current - 1);
+            }
+        }, { passive: true });
     })();
     </script>
 
