@@ -135,17 +135,53 @@ nav_order: 1
             });
         });
 
-        // Touch swipe
+        // Touch drag — pages follow finger in real time
         var touchStartX = 0;
+        var dragging = false;
+        var pageWidth = 0;
         var container = document.getElementById('logo-pages');
+
         container.addEventListener('touchstart', function(e) {
             touchStartX = e.touches[0].clientX;
+            pageWidth = container.offsetWidth;
+            dragging = true;
+            pages.forEach(function(p) { p.style.transition = 'none'; });
         }, { passive: true });
-        container.addEventListener('touchend', function(e) {
-            var diff = touchStartX - e.changedTouches[0].clientX;
-            if (Math.abs(diff) > 40) {
-                goTo(diff > 0 ? current + 1 : current - 1);
+
+        container.addEventListener('touchmove', function(e) {
+            if (!dragging) return;
+            var delta = e.touches[0].clientX - touchStartX;
+            pages[current].style.transform = 'translateX(' + delta + 'px)';
+            if (delta < 0 && current + 1 < pages.length) {
+                pages[current + 1].style.transform = 'translateX(' + (pageWidth + delta) + 'px)';
+            } else if (delta > 0 && current - 1 >= 0) {
+                pages[current - 1].style.transform = 'translateX(' + (-pageWidth + delta) + 'px)';
             }
+        }, { passive: true });
+
+        container.addEventListener('touchend', function(e) {
+            if (!dragging) return;
+            dragging = false;
+            var delta = e.changedTouches[0].clientX - touchStartX;
+            var nextIdx = current;
+            if (delta < -40 && current + 1 < pages.length) nextIdx = current + 1;
+            else if (delta > 40 && current - 1 >= 0) nextIdx = current - 1;
+            // Apply target classes while inline styles still hold position
+            pages.forEach(function(p, i) {
+                p.classList.remove('active', 'prev');
+                if (i < nextIdx) p.classList.add('prev');
+            });
+            pages[nextIdx].classList.add('active');
+            dots.forEach(function(d) { d.classList.remove('active'); });
+            dots[nextIdx].classList.add('active');
+            current = nextIdx;
+            // Re-enable transitions, clear inline transforms → animate to class positions
+            requestAnimationFrame(function() {
+                pages.forEach(function(p) {
+                    p.style.transition = '';
+                    p.style.transform = '';
+                });
+            });
         }, { passive: true });
     })();
     </script>
