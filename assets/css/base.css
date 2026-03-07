@@ -984,6 +984,8 @@
 
         .footer-icons {
             display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
             align-items: center;
             gap: 0.5rem;
             flex-shrink: 0;
