@@ -982,6 +982,13 @@
             margin-right: 0.25rem;
         }
 
+        .footer-icons {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            flex-shrink: 0;
+        }
+
         .footer-social-icon {
             display: flex;
             align-items: center;
