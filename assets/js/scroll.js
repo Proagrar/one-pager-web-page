@@ -24,10 +24,10 @@ window.addEventListener('scroll', function() {
         heroBg.style.transform = `translateY(${scrolled * 0.5}px)`;
     }
 
-    // Scroll-to-top button — show in last 30% of page
+    // Scroll-to-top button — show after 400px
     const scrollTopBtn = document.getElementById('scroll-top');
     if (scrollTopBtn) {
-        if (scrollPercent > 70) {
+        if (scrolled > 400) {
             scrollTopBtn.classList.add('visible');
         } else {
             scrollTopBtn.classList.remove('visible');
