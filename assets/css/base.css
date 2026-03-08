@@ -1174,6 +1174,7 @@
             
             .menu-toggle {
                 display: block;
+                margin-left: auto;
             }
             
             .logo img {
