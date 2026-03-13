@@ -25,7 +25,7 @@ nav_order: 1
     <div class="container">
         <div class="stats-grid">
             <div class="stat-item fade-in">
-                <span class="stat-number">50+</span>
+                <span class="stat-number">200+</span>
                 <span class="stat-label">zadovoljnih naročnikov</span>
             </div>
             <div class="stat-item fade-in">
@@ -244,7 +244,7 @@ nav_order: 1
             <div class="process-card fade-in">
                 <div class="process-circle-img"><img src="{{ '/assets/img/Segmentacija in vzorcenje.svg' | relative_url }}" alt="Segmentacija in vzorčenje tal"></div>
                 <h3>Segmentacija in vzorčenje tal</h3>
-                <p>Z analizo večletnih satelitskih posnetkov in rastnih indeksov natančno razmejimo vaše polje na predele z visoko, povprečno in nižjo produktivnostjo. Naš agrarni tehnik na podlagi teh podatkov določi segmente, kjer nato z preciznostjo odvzamemo več vzorcev tal. Tako dobimo jasen vpogled v fizikalno in kemijsko sestavo vsakega segmenta polja posebej (strukturo tal, vodno kapaciteto, hranilne potrebe ...).</p>
+                <p>Vsaka površina potrebuje začetno segmentacijo, pri čemer polje/travnik ali trajni nasad razdelimo na produktivnostne cone. Vodilo nam je dejstvo, da je rast rastlin refleksija na stanje v tleh. Sledi najpreciznejši odvzem vzorcev, pri čemer uporabljamo RTK signal, ki memorira mesto vboda in sondo, ki omogoča, da ob enem vbodu vzorce delimo celo na tri globine (trajni nasadi 0-30, 30-65, 65-105 cm) . Tako dobimo jasen vpogled v fizikalno in kemijsko sestavo vsakega segmenta polja posebej (strukturo tal, vodno kapaciteto, hranilne potrebe …).</p>
             </div>
             <div class="process-card fade-in">
                 <div class="process-circle-img"><img src="{{ '/assets/img/Obdelava podatkov in optimizacija.svg' | relative_url }}" alt="Obdelava podatkov in optimizacija"></div>
