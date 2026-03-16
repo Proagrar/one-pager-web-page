@@ -98,16 +98,46 @@ nav_order: 1
                 <img src="{{ '/assets/img/Logos/LOGO-KGZ-LITIJA.svg' | relative_url }}" alt="KGZ Litija" loading="lazy">
                 <img src="{{ '/assets/img/Logos/Logo-Skrjanec.jpg' | relative_url }}" alt="Škrjanec" loading="lazy">
                 <img src="{{ '/assets/img/Logos/Logo-ekosirarna.jpg' | relative_url }}" alt="Ekosirarna" loading="lazy">
+                <img src="{{ '/assets/img/Logos/logo-karlovcek.jpg' | relative_url }}" alt="Karlovček" loading="lazy">
             </div>
             <div class="logo-page">
-                <img src="{{ '/assets/img/Logos/logo-karlovcek.jpg' | relative_url }}" alt="Karlovček" loading="lazy">
                 <img src="{{ '/assets/img/Logos/Logo-Colja.svg' | relative_url }}" alt="Colja" loading="lazy">
                 <img src="{{ '/assets/img/Logos/Logo-medle.svg' | relative_url }}" alt="Medle" loading="lazy">
+                <a href="https://kmetijakastelic.si/" target="_blank" rel="noopener noreferrer"><img src="{{ '/assets/img/Logos/logo-kastelic.svg' | relative_url }}" alt="Eko kmetija Kastelic" loading="lazy"></a>
+                <img src="{{ '/assets/img/Logos/logo-hrga-denis.svg' | relative_url }}" alt="Hrga Denis – Kmetija" loading="lazy">
+            </div>
+            <div class="logo-page">
+                <img src="{{ '/assets/img/Logos/logo-evrosad.svg' | relative_url }}" alt="Evrosad" loading="lazy">
+                <a href="https://www.sember.hr/" target="_blank" rel="noopener noreferrer"><img src="{{ '/assets/img/Logos/logo-sember.svg' | relative_url }}" alt="Šember" loading="lazy"></a>
+                <img src="{{ '/assets/img/Logos/logo-vina-tomac.svg' | relative_url }}" alt="Vina Tomac" loading="lazy">
+                <a href="https://vinarija-stampar.hr/" target="_blank" rel="noopener noreferrer"><img src="{{ '/assets/img/Logos/logo-stampar.svg' | relative_url }}" alt="Vinarija Štampar" loading="lazy"></a>
+            </div>
+            <div class="logo-page">
+                <a href="https://vina-kuncic.hr/" target="_blank" rel="noopener noreferrer"><img src="{{ '/assets/img/Logos/logo-kuncic.svg' | relative_url }}" alt="Vinarija Kunčič" loading="lazy"></a>
+                <a href="https://familijaestate.si/" target="_blank" rel="noopener noreferrer"><img src="{{ '/assets/img/Logos/logo-familija.svg' | relative_url }}" alt="Familija" loading="lazy"></a>
+                <a href="https://suklje.com/" target="_blank" rel="noopener noreferrer"><img src="{{ '/assets/img/Logos/logo-suklje.svg' | relative_url }}" alt="Šuklje" loading="lazy"></a>
+                <a href="https://www.klet-krsko.si/" target="_blank" rel="noopener noreferrer"><img src="{{ '/assets/img/Logos/logo-kz-krsko.svg' | relative_url }}" alt="KZ Krško z.o.o." loading="lazy"></a>
+            </div>
+            <div class="logo-page">
+                <img src="{{ '/assets/img/Logos/logo-dolenc.svg' | relative_url }}" alt="Kmetija Dolenc" loading="lazy">
+                <a href="https://mulej-bled.si/sl/" target="_blank" rel="noopener noreferrer"><img src="{{ '/assets/img/Logos/logo-mulej-bled.svg' | relative_url }}" alt="Kmetija Mulej Bled" loading="lazy"></a>
+                <img src="{{ '/assets/img/Logos/logo-agro-kadic.svg' | relative_url }}" alt="Agro Kadić" loading="lazy">
+                <img src="{{ '/assets/img/Logos/logo-rocnik.svg' | relative_url }}" alt="Gregor Ročnik – Kmetija" loading="lazy">
+            </div>
+            <div class="logo-page">
+                <a href="https://hmeljcas.com/" target="_blank" rel="noopener noreferrer"><img src="{{ '/assets/img/Logos/logo-hmeljcas.svg' | relative_url }}" alt="Hmeljarstvo Čas" loading="lazy"></a>
+                <img src="{{ '/assets/img/Logos/logo-grm-nm.svg' | relative_url }}" alt="Kmetijska šola Grm NM" loading="lazy">
+                <a href="https://vinogradi-volarevic.hr/en/" target="_blank" rel="noopener noreferrer"><img src="{{ '/assets/img/Logos/logo-volarevic.svg' | relative_url }}" alt="Volarević" loading="lazy"></a>
+                <a href="https://www.vino-kozinc.com/" target="_blank" rel="noopener noreferrer"><img src="{{ '/assets/img/Logos/logo-vino-kozinc.svg' | relative_url }}" alt="Vino Kozinc" loading="lazy"></a>
             </div>
         </div>
         <div class="logo-dots" id="logo-dots">
             <button class="logo-dot active" data-index="0" aria-label="Stran 1"></button>
             <button class="logo-dot" data-index="1" aria-label="Stran 2"></button>
+            <button class="logo-dot" data-index="2" aria-label="Stran 3"></button>
+            <button class="logo-dot" data-index="3" aria-label="Stran 4"></button>
+            <button class="logo-dot" data-index="4" aria-label="Stran 5"></button>
+            <button class="logo-dot" data-index="5" aria-label="Stran 6"></button>
         </div>
     </div>
     <script>
@@ -132,8 +162,27 @@ nav_order: 1
         dots.forEach(function(dot) {
             dot.addEventListener('click', function() {
                 goTo(parseInt(this.dataset.index));
+                resetAutoplay();
             });
         });
+
+        // Auto-rotation every 3 seconds
+        var autoplayInterval;
+        function startAutoplay() {
+            autoplayInterval = setInterval(function() {
+                goTo((current + 1) % pages.length);
+            }, 5000);
+        }
+        function resetAutoplay() {
+            clearInterval(autoplayInterval);
+            startAutoplay();
+        }
+        startAutoplay();
+
+        // Pause on hover
+        var wrap = document.querySelector('.logo-slider-wrap');
+        wrap.addEventListener('mouseenter', function() { clearInterval(autoplayInterval); });
+        wrap.addEventListener('mouseleave', startAutoplay);
 
         // Touch drag — pages follow finger in real time
         var touchStartX = 0;
@@ -162,6 +211,7 @@ nav_order: 1
         container.addEventListener('touchend', function(e) {
             if (!dragging) return;
             dragging = false;
+            resetAutoplay();
             var delta = e.changedTouches[0].clientX - touchStartX;
             var nextIdx = current;
             if (delta < -40 && current + 1 < pages.length) nextIdx = current + 1;

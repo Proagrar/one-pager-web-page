@@ -527,7 +527,7 @@
 
         #logo-pages {
             position: relative;
-            height: 80px;
+            height: 75px;
             overflow: hidden;
         }
 
@@ -543,7 +543,7 @@
             flex-wrap: nowrap;
             transform: translateX(100%);
             pointer-events: none;
-            transition: transform 0.4s ease;
+            transition: transform 0.8s ease;
         }
 
         .logo-page.active {
@@ -556,11 +556,11 @@
         }
 
         .logo-page img {
-            width: 180px;
-            height: 80px;
+            width: 155px;
+            height: 75px;
             object-fit: contain;
             object-position: center;
-            padding: 12px 16px;
+            padding: 10px 14px;
             background: white;
             border-radius: 0.6rem;
             box-shadow: 0 1px 6px rgba(0,0,0,0.08);
@@ -1135,6 +1135,20 @@
         }
         
         @media (max-width: 768px) {
+            #logo-pages {
+                height: 58px;
+            }
+
+            .logo-page {
+                gap: 0.6rem;
+            }
+
+            .logo-page img {
+                width: 85px;
+                height: 58px;
+                padding: 7px 10px;
+            }
+
             .container {
                 padding: 0 1.25rem;
             }
