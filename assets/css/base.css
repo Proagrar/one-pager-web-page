@@ -499,6 +499,17 @@
             object-fit: cover;
         }
 
+        .process-circle-img a {
+            display: block;
+            cursor: zoom-in;
+            transition: opacity 0.25s ease, transform 0.25s ease;
+        }
+
+        .process-circle-img a:hover {
+            opacity: 0.85;
+            transform: scale(1.05);
+        }
+
         .process-card h3 {
             color: #c6d92d;
             font-size: 1.15rem;
