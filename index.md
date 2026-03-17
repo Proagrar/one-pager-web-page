@@ -292,27 +292,27 @@ nav_order: 1
 
         <div class="process-grid">
             <div class="process-card fade-in">
-                <div class="process-circle-img"><a href="{{ '/assets/img/gallery/1.JPG' | relative_url }}" class="glightbox process-lightbox" data-gallery="proces"><img src="{{ '/assets/img/Segmentacija in vzorcenje.svg' | relative_url }}" alt="Segmentacija in vzorčenje tal"></a></div>
+                <div class="process-circle-img"><a href="#" class="process-lightbox" data-index="0"><img src="{{ '/assets/img/Segmentacija in vzorcenje.svg' | relative_url }}" alt="Segmentacija in vzorčenje tal"></a></div>
                 <h3>Segmentacija in vzorčenje tal</h3>
                 <p>Vsaka površina potrebuje začetno segmentacijo, pri čemer polje/travnik ali trajni nasad razdelimo na produktivnostne cone. Vodilo nam je dejstvo, da je rast rastlin refleksija na stanje v tleh. Sledi najpreciznejši odvzem vzorcev, pri čemer uporabljamo RTK signal, ki memorira mesto vboda in sondo, ki omogoča, da ob enem vbodu vzorce delimo celo na tri globine (trajni nasadi 0-30, 30-65, 65-105 cm) . Tako dobimo jasen vpogled v fizikalno in kemijsko sestavo vsakega segmenta polja posebej (strukturo tal, vodno kapaciteto, hranilne potrebe …).</p>
             </div>
             <div class="process-card fade-in">
-                <div class="process-circle-img"><a href="{{ '/assets/img/gallery/2.JPG' | relative_url }}" class="glightbox process-lightbox" data-gallery="proces"><img src="{{ '/assets/img/Obdelava podatkov in optimizacija.svg' | relative_url }}" alt="Obdelava podatkov in optimizacija"></a></div>
+                <div class="process-circle-img"><a href="#" class="process-lightbox" data-index="1"><img src="{{ '/assets/img/Obdelava podatkov in optimizacija.svg' | relative_url }}" alt="Obdelava podatkov in optimizacija"></a></div>
                 <h3>Obdelava podatkov in optimizacija</h3>
                 <p>Vzorci zemlje v najkrajšem času potujejo v laboratorij. Ob prispelih podatkih iz laboratorija se opravi izračun potrebe po vnosu elementov, pri čemer prvo vnesemo plan vnosa organskih gnojil, kar generira jasen izračun in priporočilo o gnojenju posevka za naslednjo sezono. Poročilo je jasno, enostavno ter vključuje bistvene elemente v tleh.</p>
             </div>
             <div class="process-card fade-in">
-                <div class="process-circle-img"><a href="{{ '/assets/img/gallery/3.JPG' | relative_url }}" class="glightbox process-lightbox" data-gallery="proces"><img src="{{ '/assets/img/Prijava gnojilnih in setvenih map.svg' | relative_url }}" alt="Priprava gnojilnih in setvenih map"></a></div>
+                <div class="process-circle-img"><a href="#" class="process-lightbox" data-index="2"><img src="{{ '/assets/img/Prijava gnojilnih in setvenih map.svg' | relative_url }}" alt="Priprava gnojilnih in setvenih map"></a></div>
                 <h3>Priprava gnojilnih in setvenih map</h3>
                 <p>Bistveno je razumevanje podatkov ter personalizacija vsakega polja, znotraj večjih polj pa posameznega segmenta znotraj polja. Predstavljajte si, da je vsak predel polja, travnika, vinograda ali sadovnjaka preskrbljen optimalno, da na delih z večjim potencialom ne primanjkuje hranil, medtem ko na drugih delih preprečimo presežke.</p>
             </div>
             <div class="process-card fade-in">
-                <div class="process-circle-img"><a href="{{ '/assets/img/gallery/4.JPG' | relative_url }}" class="glightbox process-lightbox" data-gallery="proces"><img src="{{ '/assets/img/Storitve preciznega kmetijstva.svg' | relative_url }}" alt="Storitve preciznega kmetijstva"></a></div>
+                <div class="process-circle-img"><a href="#" class="process-lightbox" data-index="3"><img src="{{ '/assets/img/Storitve preciznega kmetijstva.svg' | relative_url }}" alt="Storitve preciznega kmetijstva"></a></div>
                 <h3>Storitve preciznega kmetijstva</h3>
                 <p>Vaša kmetija potrebuje uslugo gnojenja, setve, zaščite posevka? Za vas lahko to pravimo mi, s podporo najnovejše mehanizacije in strokovnim znanjem.</p>
             </div>
             <div class="process-card fade-in">
-                <div class="process-circle-img"><a href="{{ '/assets/img/gallery/5.JPG' | relative_url }}" class="glightbox process-lightbox" data-gallery="proces"><img src="{{ '/assets/img/Strokovna podpora in svetovanje.svg' | relative_url }}" alt="Strokovna podpora in svetovanje"></a></div>
+                <div class="process-circle-img"><a href="#" class="process-lightbox" data-index="4"><img src="{{ '/assets/img/Strokovna podpora in svetovanje.svg' | relative_url }}" alt="Strokovna podpora in svetovanje"></a></div>
                 <h3>Strokovna podpora in svetovanje</h3>
                 <p>Precizna analiza tal je začetek procesa. V času od analize vam je potreben nekdo, ki razume tla, elemente v tleh, potrebe posevka in doseganje najvišjih standardov v proizvodnji z uporabo najnovejših tehnologij za ustvarjanje presežkov.</p>
             </div>
@@ -461,7 +461,20 @@ nav_order: 1
     </div>
 </section>
 
+<!-- Hidden gallery — all images in /assets/img/gallery/, sorted by name -->
+<div style="position:absolute;width:0;height:0;overflow:hidden;" aria-hidden="true">
+{% assign gallery_images = site.static_files | where_exp:"f","f.path contains '/assets/img/gallery/'" | sort:"name" %}
+{% for img in gallery_images %}<a href="{{ img.path | relative_url }}" class="glightbox"></a>
+{% endfor %}
+</div>
+
 <script src="{{ '/assets/js/glightbox.min.js' | relative_url }}"></script>
 <script>
-GLightbox({ selector: '.glightbox', touchNavigation: true, loop: true, zoomable: false });
+var lightbox = GLightbox({ selector: '.glightbox', touchNavigation: true, loop: true, zoomable: false });
+document.querySelectorAll('.process-lightbox').forEach(function(el) {
+    el.addEventListener('click', function(e) {
+        e.preventDefault();
+        lightbox.openAt(parseInt(this.dataset.index));
+    });
+});
 </script>
