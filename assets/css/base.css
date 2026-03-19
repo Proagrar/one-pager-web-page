@@ -515,7 +515,7 @@
         .process-title-link:hover,
         .process-title-link:active,
         .process-title-link:focus {
-            color: #c6d92d;
+            color: inherit;
             text-decoration: none;
             cursor: pointer;
             font: inherit;
