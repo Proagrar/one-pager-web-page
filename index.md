@@ -294,27 +294,27 @@ nav_order: 1
             <div class="process-card fade-in">
                 <div class="process-circle-img"><a href="#" class="process-lightbox" data-index="0"><img src="{{ '/assets/img/Segmentacija in vzorcenje.svg' | relative_url }}" alt="Segmentacija in vzorčenje tal"></a></div>
                 <h3><a href="#" class="process-lightbox process-title-link" data-index="0">Segmentacija in vzorčenje tal</a></h3>
-                <p><a href="#" class="process-lightbox process-title-link" data-index="0">Vsaka površina potrebuje začetno segmentacijo, pri čemer polje/travnik ali trajni nasad razdelimo na produktivnostne cone. Vodilo nam je dejstvo, da je rast rastlin refleksija na stanje v tleh. Sledi najpreciznejši odvzem vzorcev, pri čemer uporabljamo RTK signal, ki memorira mesto vboda in sondo, ki omogoča, da ob enem vbodu vzorce delimo celo na tri globine (trajni nasadi 0-30, 30-65, 65-105 cm) . Tako dobimo jasen vpogled v fizikalno in kemijsko sestavo vsakega segmenta polja posebej (strukturo tal, vodno kapaciteto, hranilne potrebe …).</a></p>
+                <p><a href="#" class="process-lightbox process-body-link" data-index="0">Vsaka površina potrebuje začetno segmentacijo, pri čemer polje/travnik ali trajni nasad razdelimo na produktivnostne cone. Vodilo nam je dejstvo, da je rast rastlin refleksija na stanje v tleh. Sledi najpreciznejši odvzem vzorcev, pri čemer uporabljamo RTK signal, ki memorira mesto vboda in sondo, ki omogoča, da ob enem vbodu vzorce delimo celo na tri globine (trajni nasadi 0-30, 30-65, 65-105 cm) . Tako dobimo jasen vpogled v fizikalno in kemijsko sestavo vsakega segmenta polja posebej (strukturo tal, vodno kapaciteto, hranilne potrebe …).</a></p>
             </div>
             <div class="process-card fade-in">
                 <div class="process-circle-img"><a href="#" class="process-lightbox" data-index="1"><img src="{{ '/assets/img/Obdelava podatkov in optimizacija.svg' | relative_url }}" alt="Obdelava podatkov in optimizacija"></a></div>
                 <h3><a href="#" class="process-lightbox process-title-link" data-index="1">Obdelava podatkov in optimizacija</a></h3>
-                <p><a href="#" class="process-lightbox process-title-link" data-index="1">Vzorci zemlje v najkrajšem času potujejo v laboratorij. Ob prispelih podatkih iz laboratorija se opravi izračun potrebe po vnosu elementov, pri čemer prvo vnesemo plan vnosa organskih gnojil, kar generira jasen izračun in priporočilo o gnojenju posevka za naslednjo sezono. Poročilo je jasno, enostavno ter vključuje bistvene elemente v tleh.</a></p>
+                <p><a href="#" class="process-lightbox process-body-link" data-index="1">Vzorci zemlje v najkrajšem času potujejo v laboratorij. Ob prispelih podatkih iz laboratorija se opravi izračun potrebe po vnosu elementov, pri čemer prvo vnesemo plan vnosa organskih gnojil, kar generira jasen izračun in priporočilo o gnojenju posevka za naslednjo sezono. Poročilo je jasno, enostavno ter vključuje bistvene elemente v tleh.</a></p>
             </div>
             <div class="process-card fade-in">
                 <div class="process-circle-img"><a href="#" class="process-lightbox" data-index="2"><img src="{{ '/assets/img/Prijava gnojilnih in setvenih map.svg' | relative_url }}" alt="Priprava gnojilnih in setvenih map"></a></div>
                 <h3><a href="#" class="process-lightbox process-title-link" data-index="2">Priprava gnojilnih in setvenih map</a></h3>
-                <p><a href="#" class="process-lightbox process-title-link" data-index="2">Bistveno je razumevanje podatkov ter personalizacija vsakega polja, znotraj večjih polj pa posameznega segmenta znotraj polja. Predstavljajte si, da je vsak predel polja, travnika, vinograda ali sadovnjaka preskrbljen optimalno, da na delih z večjim potencialom ne primanjkuje hranil, medtem ko na drugih delih preprečimo presežke.</a></p>
+                <p><a href="#" class="process-lightbox process-body-link" data-index="2">Bistveno je razumevanje podatkov ter personalizacija vsakega polja, znotraj večjih polj pa posameznega segmenta znotraj polja. Predstavljajte si, da je vsak predel polja, travnika, vinograda ali sadovnjaka preskrbljen optimalno, da na delih z večjim potencialom ne primanjkuje hranil, medtem ko na drugih delih preprečimo presežke.</a></p>
             </div>
             <div class="process-card fade-in">
                 <div class="process-circle-img"><a href="#" class="process-lightbox" data-index="3"><img src="{{ '/assets/img/Storitve preciznega kmetijstva.svg' | relative_url }}" alt="Storitve preciznega kmetijstva"></a></div>
                 <h3><a href="#" class="process-lightbox process-title-link" data-index="3">Storitve preciznega kmetijstva</a></h3>
-                <p><a href="#" class="process-lightbox process-title-link" data-index="3">Vaša kmetija potrebuje uslugo gnojenja, setve, zaščite posevka? Za vas lahko to pravimo mi, s podporo najnovejše mehanizacije in strokovnim znanjem.</a></p>
+                <p><a href="#" class="process-lightbox process-body-link" data-index="3">Vaša kmetija potrebuje uslugo gnojenja, setve, zaščite posevka? Za vas lahko to pravimo mi, s podporo najnovejše mehanizacije in strokovnim znanjem.</a></p>
             </div>
             <div class="process-card fade-in">
                 <div class="process-circle-img"><a href="#" class="process-lightbox" data-index="4"><img src="{{ '/assets/img/Strokovna podpora in svetovanje.svg' | relative_url }}" alt="Strokovna podpora in svetovanje"></a></div>
                 <h3><a href="#" class="process-lightbox process-title-link" data-index="4">Strokovna podpora in svetovanje</a></h3>
-                <p><a href="#" class="process-lightbox process-title-link" data-index="4">Precizna analiza tal je začetek procesa. V času od analize vam je potreben nekdo, ki razume tla, elemente v tleh, potrebe posevka in doseganje najvišjih standardov v proizvodnji z uporabo najnovejših tehnologij za ustvarjanje presežkov.</a></p>
+                <p><a href="#" class="process-lightbox process-body-link" data-index="4">Precizna analiza tal je začetek procesa. V času od analize vam je potreben nekdo, ki razume tla, elemente v tleh, potrebe posevka in doseganje najvišjih standardov v proizvodnji z uporabo najnovejših tehnologij za ustvarjanje presežkov.</a></p>
             </div>
         </div>
     </div>

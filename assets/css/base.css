@@ -528,12 +528,15 @@
             color: #c6d92d;
         }
 
-        .process-card p .process-title-link,
-        .process-card p .process-title-link:visited,
-        .process-card p .process-title-link:hover,
-        .process-card p .process-title-link:active,
-        .process-card p .process-title-link:focus {
+        .process-body-link,
+        .process-body-link:visited,
+        .process-body-link:hover,
+        .process-body-link:active,
+        .process-body-link:focus {
             color: rgba(255, 255, 255, 0.88);
+            text-decoration: none;
+            cursor: pointer;
+            font: inherit;
         }
 
         .process-card h3 {
