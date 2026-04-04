@@ -1259,13 +1259,17 @@
             }
 
             /* Feature cards: horizontal layout (icon left, text right) */
+            .features-grid {
+                gap: 0.75rem;
+            }
+
             .feature-card {
-                display: flex;
-                flex-direction: row;
-                align-items: flex-start;
+                display: flex !important;
+                flex-direction: row !important;
+                align-items: center !important;
                 gap: 1rem;
                 text-align: left;
-                padding: 0.5rem 0;
+                padding: 0.5rem 0 !important;
             }
 
             .feature-badge {
@@ -1276,10 +1280,6 @@
             .feature-card p {
                 text-align: left;
                 margin: 0;
-            }
-
-            .features-grid {
-                gap: 1.5rem;
             }
 
             /* Logo slider: 2×2 grid per page on mobile */
