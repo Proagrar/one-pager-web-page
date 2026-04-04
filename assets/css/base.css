@@ -76,7 +76,7 @@
         }
 
         .header.scrolled .logo img {
-            height: 118px;
+            height: 177px;
         }
 
         .container {
@@ -98,10 +98,12 @@
             display: flex;
             align-items: center;
             transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            margin-left: 0;
+            padding-left: 0;
         }
         
         .logo img {
-            height: 118px;
+            height: 177px;
             width: auto;
             display: block;
             transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -1341,11 +1343,11 @@
             }
             
             .logo img {
-                height: 94px;
+                height: 141px;
             }
 
             .header.scrolled .logo img {
-                height: 94px;
+                height: 141px;
             }
             
             .hero {
