@@ -1280,6 +1280,7 @@
             .feature-card p {
                 text-align: left;
                 margin: 0;
+                margin-bottom: 0 !important;
             }
 
             /* Logo slider: 2×2 grid per page on mobile */
