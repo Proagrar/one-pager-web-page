@@ -1284,20 +1284,24 @@
 
             /* Logo slider: 2×2 grid per page on mobile */
             #logo-pages {
-                height: 200px;
+                height: 210px;
             }
 
             .logo-page {
-                flex-wrap: wrap;
-                gap: 0.75rem;
-                justify-content: center;
-                align-content: center;
+                display: grid !important;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 1fr 1fr;
+                gap: 0.6rem;
+                align-items: center;
+                justify-items: center;
+                padding: 0.25rem;
             }
 
             .logo-page img {
-                width: calc(50% - 0.75rem);
-                height: 80px;
-                padding: 8px 12px;
+                width: 100% !important;
+                height: 90px !important;
+                padding: 10px 14px;
+                object-fit: contain;
             }
 
             .container {
@@ -1390,7 +1394,17 @@
             .features-grid,
             .services-grid,
             .testimonials-grid {
-                grid-template-columns: 1fr;
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .testimonial-card {
+                padding: 1rem !important;
+            }
+
+            .testimonial-avatar,
+            .testimonial-avatar img {
+                width: 48px !important;
+                height: 48px !important;
             }
 
             .partners-grid {
