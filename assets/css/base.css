@@ -1419,6 +1419,10 @@
                 grid-template-columns: 1fr;
             }
 
+            .testimonials-grid {
+                grid-template-columns: 1fr;
+            }
+
             .testimonial-card {
                 padding: 1rem !important;
             }
