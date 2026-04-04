@@ -1247,18 +1247,56 @@
         }
         
         @media (max-width: 768px) {
+            /* Stats: center on mobile */
+            .stats-grid {
+                text-align: center;
+            }
+
+            .stat-number,
+            .stat-label {
+                text-align: center;
+            }
+
+            /* Feature cards: horizontal layout (icon left, text right) */
+            .feature-card {
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                gap: 1rem;
+                text-align: left;
+                padding: 0.5rem 0;
+            }
+
+            .feature-badge {
+                flex-shrink: 0;
+            }
+
+            .feature-card h3,
+            .feature-card p {
+                text-align: left;
+                margin: 0;
+            }
+
+            .features-grid {
+                gap: 1.5rem;
+            }
+
+            /* Logo slider: 2×2 grid per page on mobile */
             #logo-pages {
-                height: 58px;
+                height: 200px;
             }
 
             .logo-page {
-                gap: 0.6rem;
+                flex-wrap: wrap;
+                gap: 0.75rem;
+                justify-content: center;
+                align-content: center;
             }
 
             .logo-page img {
-                width: 85px;
-                height: 58px;
-                padding: 7px 10px;
+                width: calc(50% - 0.75rem);
+                height: 80px;
+                padding: 8px 12px;
             }
 
             .container {
@@ -1354,24 +1392,6 @@
                 grid-template-columns: 1fr;
             }
 
-            .feature-card {
-                display: flex;
-                flex-direction: row;
-                align-items: flex-start;
-                gap: 1rem;
-                text-align: left;
-                padding: 1rem;
-            }
-
-            .feature-badge {
-                flex-shrink: 0;
-            }
-
-            .feature-card h3,
-            .feature-card p {
-                text-align: left;
-            }
-            
             .partners-grid {
                 grid-template-columns: repeat(2, 1fr);
                 gap: 1.5rem;
