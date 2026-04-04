@@ -750,8 +750,8 @@
         }
 
         .testimonial-avatar img {
-            width: 100%;
-            height: 100%;
+            width: 62px !important;
+            height: 62px !important;
             object-fit: cover;
             border: none;
             outline: none;
@@ -1207,7 +1207,7 @@
             }
 
             .testimonials-grid {
-                grid-template-columns: repeat(2, 1fr);
+                grid-template-columns: repeat(3, 1fr);
             }
 
             .hero h1 {
