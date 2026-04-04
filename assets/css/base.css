@@ -200,7 +200,7 @@
         
         .hero h1 {
             font-family: 'Roboto', sans-serif;
-            font-size: 64px;
+            font-size: 48px;
             font-weight: 700;
             margin-bottom: 1.75rem;
             line-height: 1.1;
@@ -307,7 +307,7 @@
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
             gap: 3.5rem;
-            text-align: center;
+            text-align: left;
             position: relative;
             z-index: 2;
         }
@@ -322,18 +322,20 @@
         .stat-item:nth-child(4) { animation-delay: 0.4s; }
         
         .stat-number {
-            font-size: 1.5rem;
+            font-size: 48px;
             font-weight: 800;
             color: var(--color-green);
             margin-bottom: 0.5rem;
             display: block;
             line-height: 1;
+            text-align: left;
         }
         
         .stat-label {
             font-size: 1.125rem;
             opacity: 0.95;
             font-weight: 500;
+            text-align: left;
         }
         
         /* SECTION */
@@ -343,6 +345,7 @@
 
         #prednosti {
             padding-top: 3rem;
+            padding-bottom: 3rem;
         }
         
         .section-alt {
@@ -353,6 +356,27 @@
             text-align: center;
             max-width: 850px;
             margin: 0 auto 5rem;
+        }
+
+        #prednosti .section-header {
+            margin-bottom: 3rem;
+        }
+
+        #prednosti .section-title {
+            margin-bottom: 0;
+        }
+
+        #reference {
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+        }
+
+        #reference .section-header {
+            margin-bottom: 1rem;
+        }
+
+        #reference .section-title {
+            margin-bottom: 0;
         }
         
         .section-title {
@@ -454,11 +478,55 @@
         /* HOW IT WORKS - NEW GRID LAYOUT */
         .process-section {
             background: linear-gradient(to bottom, #6C8404, #1F3000);
-            padding: 7rem 0;
+            padding: 3rem 0;
         }
 
         .process-title {
             color: white !important;
+            margin-bottom: 0;
+        }
+
+        #kako-deluje .section-header {
+            margin-bottom: 2rem;
+        }
+
+        #faq {
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+        }
+
+        #faq .section-header {
+            margin-bottom: 1rem;
+        }
+
+        #faq .section-title {
+            margin-bottom: 0;
+        }
+
+        #o_nas {
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+        }
+
+        #o_nas .section-header {
+            margin-bottom: 1rem;
+        }
+
+        #o_nas .section-title {
+            margin-bottom: 0;
+        }
+
+        #kontakt {
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+        }
+
+        #kontakt .section-header {
+            margin-bottom: 1rem;
+        }
+
+        #kontakt .section-title {
+            margin-bottom: 0;
         }
 
         .process-grid {
@@ -579,7 +647,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            gap: 2.5rem;
+            gap: 1.5rem;
             flex-wrap: nowrap;
             transform: translateX(100%);
             pointer-events: none;
@@ -596,7 +664,7 @@
         }
 
         .logo-page img {
-            width: 155px;
+            width: 110px;
             height: 75px;
             object-fit: contain;
             object-position: center;
@@ -1142,7 +1210,7 @@
             }
 
             .hero h1 {
-                font-size: 2.75rem;
+                font-size: 2.06rem;
             }
             
             .hero p {
@@ -1250,7 +1318,7 @@
             }
             
             .hero h1 {
-                font-size: 2rem;
+                font-size: 1.5rem;
             }
             
             .hero p {
@@ -1284,6 +1352,24 @@
             .services-grid,
             .testimonials-grid {
                 grid-template-columns: 1fr;
+            }
+
+            .feature-card {
+                display: flex;
+                flex-direction: row;
+                align-items: flex-start;
+                gap: 1rem;
+                text-align: left;
+                padding: 1rem;
+            }
+
+            .feature-badge {
+                flex-shrink: 0;
+            }
+
+            .feature-card h3,
+            .feature-card p {
+                text-align: left;
             }
             
             .partners-grid {

@@ -1,0 +1,14 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(pip show:*)",
+      "Bash(py --version)",
+      "Bash(where python3:*)",
+      "Bash(where py:*)",
+      "Bash(py -m pip show python-pptx)",
+      "Bash(py -c \":*)",
+      "Bash(py -m pip install cairosvg --quiet)",
+      "Bash(py -c \"import cairosvg; print\\(''ok''\\)\")"
+    ]
+  }
+}
