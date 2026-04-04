@@ -1400,10 +1400,12 @@
                 margin-bottom: 3.5rem;
             }
             
-            .features-grid,
-            .services-grid,
-            .testimonials-grid {
+            .services-grid {
                 grid-template-columns: repeat(2, 1fr);
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr;
             }
 
             .testimonial-card {
