@@ -76,7 +76,7 @@
         }
 
         .header.scrolled .logo img {
-            height: 41px;
+            height: 48px;
         }
 
         .container {
@@ -103,7 +103,7 @@
         }
         
         .logo img {
-            height: 53px;
+            height: 60px;
             width: auto;
             display: block;
             transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
