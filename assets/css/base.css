@@ -76,7 +76,7 @@
         }
 
         .header.scrolled .logo img {
-            height: 177px;
+            height: 50px;
         }
 
         .container {
@@ -90,7 +90,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 0.6rem 0;
+            padding: 0.54rem 0;
             transition: padding 0.4s cubic-bezier(0.4, 0, 0.2, 1);
         }
         
@@ -103,7 +103,7 @@
         }
         
         .logo img {
-            height: 177px;
+            height: 63px;
             width: auto;
             display: block;
             transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
