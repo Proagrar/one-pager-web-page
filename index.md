@@ -25,7 +25,7 @@ nav_order: 1
     <div class="container">
         <div class="stats-grid">
             <div class="stat-item fade-in">
-                <span class="stat-number">50+</span>
+                <span class="stat-number">200+</span>
                 <span class="stat-label">zadovoljnih naročnikov</span>
             </div>
             <div class="stat-item fade-in">
@@ -98,31 +98,135 @@ nav_order: 1
                 <img src="{{ '/assets/img/Logos/LOGO-KGZ-LITIJA.svg' | relative_url }}" alt="KGZ Litija" loading="lazy">
                 <img src="{{ '/assets/img/Logos/Logo-Skrjanec.jpg' | relative_url }}" alt="Škrjanec" loading="lazy">
                 <img src="{{ '/assets/img/Logos/Logo-ekosirarna.jpg' | relative_url }}" alt="Ekosirarna" loading="lazy">
-            </div>
-            <div class="logo-page">
                 <img src="{{ '/assets/img/Logos/logo-karlovcek.jpg' | relative_url }}" alt="Karlovček" loading="lazy">
                 <img src="{{ '/assets/img/Logos/Logo-Colja.svg' | relative_url }}" alt="Colja" loading="lazy">
                 <img src="{{ '/assets/img/Logos/Logo-medle.svg' | relative_url }}" alt="Medle" loading="lazy">
+            </div>
+            <div class="logo-page">
+                <a href="https://kmetijakastelic.si/" target="_blank" rel="noopener noreferrer"><img src="{{ '/assets/img/Logos/logo-kastelic.svg' | relative_url }}" alt="Eko kmetija Kastelic" loading="lazy"></a>
+                <img src="{{ '/assets/img/Logos/logo-hrga-denis.svg' | relative_url }}" alt="Hrga Denis – Kmetija" loading="lazy">
+                <img src="{{ '/assets/img/Logos/logo-evrosad.svg' | relative_url }}" alt="Evrosad" loading="lazy">
+                <a href="https://www.sember.hr/" target="_blank" rel="noopener noreferrer"><img src="{{ '/assets/img/Logos/logo-sember.svg' | relative_url }}" alt="Šember" loading="lazy"></a>
+                <img src="{{ '/assets/img/Logos/logo-vina-tomac.svg' | relative_url }}" alt="Vina Tomac" loading="lazy">
+                <a href="https://vinarija-stampar.hr/" target="_blank" rel="noopener noreferrer"><img src="{{ '/assets/img/Logos/logo-stampar.svg' | relative_url }}" alt="Vinarija Štampar" loading="lazy"></a>
+            </div>
+            <div class="logo-page">
+                <a href="https://vina-kuncic.hr/" target="_blank" rel="noopener noreferrer"><img src="{{ '/assets/img/Logos/logo-kuncic.svg' | relative_url }}" alt="Vinarija Kunčič" loading="lazy"></a>
+                <a href="https://familijaestate.si/" target="_blank" rel="noopener noreferrer"><img src="{{ '/assets/img/Logos/logo-familija.svg' | relative_url }}" alt="Familija" loading="lazy"></a>
+                <a href="https://suklje.com/" target="_blank" rel="noopener noreferrer"><img src="{{ '/assets/img/Logos/logo-suklje.svg' | relative_url }}" alt="Šuklje" loading="lazy"></a>
+                <a href="https://www.klet-krsko.si/" target="_blank" rel="noopener noreferrer"><img src="{{ '/assets/img/Logos/logo-kz-krsko.svg' | relative_url }}" alt="KZ Krško z.o.o." loading="lazy"></a>
+                <img src="{{ '/assets/img/Logos/logo-dolenc.svg' | relative_url }}" alt="Kmetija Dolenc" loading="lazy">
+                <a href="https://mulej-bled.si/sl/" target="_blank" rel="noopener noreferrer"><img src="{{ '/assets/img/Logos/logo-mulej-bled.svg' | relative_url }}" alt="Kmetija Mulej Bled" loading="lazy"></a>
+            </div>
+            <div class="logo-page">
+                <img src="{{ '/assets/img/Logos/logo-agro-kadic.svg' | relative_url }}" alt="Agro Kadić" loading="lazy">
+                <img src="{{ '/assets/img/Logos/logo-rocnik.svg' | relative_url }}" alt="Gregor Ročnik – Kmetija" loading="lazy">
+                <a href="https://hmeljcas.com/" target="_blank" rel="noopener noreferrer"><img src="{{ '/assets/img/Logos/logo-hmeljcas.svg' | relative_url }}" alt="Hmeljarstvo Čas" loading="lazy"></a>
+                <img src="{{ '/assets/img/Logos/logo-grm-nm.svg' | relative_url }}" alt="Kmetijska šola Grm NM" loading="lazy">
+                <a href="https://vinogradi-volarevic.hr/en/" target="_blank" rel="noopener noreferrer"><img src="{{ '/assets/img/Logos/logo-volarevic.svg' | relative_url }}" alt="Volarević" loading="lazy"></a>
+                <a href="https://www.vino-kozinc.com/" target="_blank" rel="noopener noreferrer"><img src="{{ '/assets/img/Logos/logo-vino-kozinc.svg' | relative_url }}" alt="Vino Kozinc" loading="lazy"></a>
             </div>
         </div>
         <div class="logo-dots" id="logo-dots">
             <button class="logo-dot active" data-index="0" aria-label="Stran 1"></button>
             <button class="logo-dot" data-index="1" aria-label="Stran 2"></button>
+            <button class="logo-dot" data-index="2" aria-label="Stran 3"></button>
+            <button class="logo-dot" data-index="3" aria-label="Stran 4"></button>
         </div>
     </div>
     <script>
     (function() {
         var dots = document.querySelectorAll('.logo-dot');
         var pages = document.querySelectorAll('.logo-page');
+        var current = 0;
+
+        function goTo(idx) {
+            if (idx < 0 || idx >= pages.length) return;
+            var forward = idx > current;
+            pages.forEach(function(p, i) {
+                p.classList.remove('active', 'prev');
+                if (i < idx) p.classList.add('prev');
+            });
+            pages[idx].classList.add('active');
+            dots.forEach(function(d) { d.classList.remove('active'); });
+            dots[idx].classList.add('active');
+            current = idx;
+        }
+
         dots.forEach(function(dot) {
             dot.addEventListener('click', function() {
-                var idx = parseInt(this.dataset.index);
-                pages.forEach(function(p) { p.classList.remove('active'); });
-                dots.forEach(function(d) { d.classList.remove('active'); });
-                pages[idx].classList.add('active');
-                dots[idx].classList.add('active');
+                goTo(parseInt(this.dataset.index));
+                resetAutoplay();
             });
         });
+
+        // Auto-rotation every 3 seconds
+        var autoplayInterval;
+        function startAutoplay() {
+            autoplayInterval = setInterval(function() {
+                goTo((current + 1) % pages.length);
+            }, 5000);
+        }
+        function resetAutoplay() {
+            clearInterval(autoplayInterval);
+            startAutoplay();
+        }
+        startAutoplay();
+
+        // Pause on hover
+        var wrap = document.querySelector('.logo-slider-wrap');
+        wrap.addEventListener('mouseenter', function() { clearInterval(autoplayInterval); });
+        wrap.addEventListener('mouseleave', startAutoplay);
+
+        // Touch drag — pages follow finger in real time
+        var touchStartX = 0;
+        var dragging = false;
+        var pageWidth = 0;
+        var container = document.getElementById('logo-pages');
+
+        container.addEventListener('touchstart', function(e) {
+            touchStartX = e.touches[0].clientX;
+            pageWidth = container.offsetWidth;
+            dragging = true;
+            pages.forEach(function(p) { p.style.transition = 'none'; });
+        }, { passive: true });
+
+        container.addEventListener('touchmove', function(e) {
+            if (!dragging) return;
+            var delta = e.touches[0].clientX - touchStartX;
+            pages[current].style.transform = 'translateX(' + delta + 'px)';
+            if (delta < 0 && current + 1 < pages.length) {
+                pages[current + 1].style.transform = 'translateX(' + (pageWidth + delta) + 'px)';
+            } else if (delta > 0 && current - 1 >= 0) {
+                pages[current - 1].style.transform = 'translateX(' + (-pageWidth + delta) + 'px)';
+            }
+        }, { passive: true });
+
+        container.addEventListener('touchend', function(e) {
+            if (!dragging) return;
+            dragging = false;
+            resetAutoplay();
+            var delta = e.changedTouches[0].clientX - touchStartX;
+            var nextIdx = current;
+            if (delta < -40 && current + 1 < pages.length) nextIdx = current + 1;
+            else if (delta > 40 && current - 1 >= 0) nextIdx = current - 1;
+            // Apply target classes while inline styles still hold position
+            pages.forEach(function(p, i) {
+                p.classList.remove('active', 'prev');
+                if (i < nextIdx) p.classList.add('prev');
+            });
+            pages[nextIdx].classList.add('active');
+            dots.forEach(function(d) { d.classList.remove('active'); });
+            dots[nextIdx].classList.add('active');
+            current = nextIdx;
+            // Re-enable transitions, clear inline transforms → animate to class positions
+            requestAnimationFrame(function() {
+                pages.forEach(function(p) {
+                    p.style.transition = '';
+                    p.style.transform = '';
+                });
+            });
+        }, { passive: true });
     })();
     </script>
 
@@ -182,29 +286,29 @@ nav_order: 1
 
         <div class="process-grid">
             <div class="process-card fade-in">
-                <div class="process-circle-img"><img src="{{ '/assets/img/Segmentacija in vzorcenje.svg' | relative_url }}" alt="Segmentacija in vzorčenje tal"></div>
-                <h3>Segmentacija in vzorčenje tal</h3>
-                <p>Z analizo večletnih satelitskih posnetkov in rastnih indeksov natančno razmejimo vaše polje na predele z visoko, povprečno in nižjo produktivnostjo. Naš agrarni tehnik na podlagi teh podatkov določi segmente, kjer nato z preciznostjo odvzamemo več vzorcev tal. Tako dobimo jasen vpogled v fizikalno in kemijsko sestavo vsakega segmenta polja posebej (strukturo tal, vodno kapaciteto, hranilne potrebe ...).</p>
+                <div class="process-circle-img"><a href="#" class="process-lightbox" data-index="0"><img src="{{ '/assets/img/Segmentacija in vzorcenje.svg' | relative_url }}" alt="Segmentacija in vzorčenje tal"></a></div>
+                <h3><a href="#" class="process-lightbox process-title-link" data-index="0">Segmentacija in vzorčenje tal</a></h3>
+                <p><a href="#" class="process-lightbox process-body-link" data-index="0">Vsaka površina potrebuje začetno segmentacijo, pri čemer polje/travnik ali trajni nasad razdelimo na produktivnostne cone. Vodilo nam je dejstvo, da je rast rastlin refleksija na stanje v tleh. Sledi najpreciznejši odvzem vzorcev, pri čemer uporabljamo RTK signal, ki memorira mesto vboda in sondo, ki omogoča, da ob enem vbodu vzorce delimo celo na tri globine (trajni nasadi 0-30, 30-65, 65-105 cm) . Tako dobimo jasen vpogled v fizikalno in kemijsko sestavo vsakega segmenta polja posebej (strukturo tal, vodno kapaciteto, hranilne potrebe …).</a></p>
             </div>
             <div class="process-card fade-in">
-                <div class="process-circle-img"><img src="{{ '/assets/img/Obdelava podatkov in optimizacija.svg' | relative_url }}" alt="Obdelava podatkov in optimizacija"></div>
-                <h3>Obdelava podatkov in optimizacija</h3>
-                <p>Vzorci zemlje v najkrajšem času potujejo v laboratorij. Ob prispelih podatkih iz laboratorija se opravi izračun potrebe po vnosu elementov, pri čemer prvo vnesemo plan vnosa organskih gnojil, kar generira jasen izračun in priporočilo o gnojenju posevka za naslednjo sezono. Poročilo je jasno, enostavno ter vključuje bistvene elemente v tleh.</p>
+                <div class="process-circle-img"><a href="#" class="process-lightbox" data-index="1"><img src="{{ '/assets/img/Obdelava podatkov in optimizacija.svg' | relative_url }}" alt="Obdelava podatkov in optimizacija"></a></div>
+                <h3><a href="#" class="process-lightbox process-title-link" data-index="1">Obdelava podatkov in optimizacija</a></h3>
+                <p><a href="#" class="process-lightbox process-body-link" data-index="1">Vzorci zemlje v najkrajšem času potujejo v laboratorij. Ob prispelih podatkih iz laboratorija se opravi izračun potrebe po vnosu elementov, pri čemer prvo vnesemo plan vnosa organskih gnojil, kar generira jasen izračun in priporočilo o gnojenju posevka za naslednjo sezono. Poročilo je jasno, enostavno ter vključuje bistvene elemente v tleh.</a></p>
             </div>
             <div class="process-card fade-in">
-                <div class="process-circle-img"><img src="{{ '/assets/img/Prijava gnojilnih in setvenih map.svg' | relative_url }}" alt="Priprava gnojilnih in setvenih map"></div>
-                <h3>Priprava gnojilnih in setvenih map</h3>
-                <p>Bistveno je razumevanje podatkov ter personalizacija vsakega polja, znotraj večjih polj pa posameznega segmenta znotraj polja. Predstavljajte si, da je vsak predel polja, travnika, vinograda ali sadovnjaka preskrbljen optimalno, da na delih z večjim potencialom ne primanjkuje hranil, medtem ko na drugih delih preprečimo presežke.</p>
+                <div class="process-circle-img"><a href="#" class="process-lightbox" data-index="2"><img src="{{ '/assets/img/Prijava gnojilnih in setvenih map.svg' | relative_url }}" alt="Priprava gnojilnih in setvenih map"></a></div>
+                <h3><a href="#" class="process-lightbox process-title-link" data-index="2">Priprava gnojilnih in setvenih map</a></h3>
+                <p><a href="#" class="process-lightbox process-body-link" data-index="2">Bistveno je razumevanje podatkov ter personalizacija vsakega polja, znotraj večjih polj pa posameznega segmenta znotraj polja. Predstavljajte si, da je vsak predel polja, travnika, vinograda ali sadovnjaka preskrbljen optimalno, da na delih z večjim potencialom ne primanjkuje hranil, medtem ko na drugih delih preprečimo presežke.</a></p>
             </div>
             <div class="process-card fade-in">
-                <div class="process-circle-img"><img src="{{ '/assets/img/Storitve preciznega kmetijstva.svg' | relative_url }}" alt="Storitve preciznega kmetijstva"></div>
-                <h3>Storitve preciznega kmetijstva</h3>
-                <p>Vaša kmetija potrebuje uslugo gnojenja, setve, zaščite posevka? Za vas lahko to pravimo mi, s podporo najnovejše mehanizacije in strokovnim znanjem.</p>
+                <div class="process-circle-img"><a href="#" class="process-lightbox" data-index="3"><img src="{{ '/assets/img/Storitve preciznega kmetijstva.svg' | relative_url }}" alt="Storitve preciznega kmetijstva"></a></div>
+                <h3><a href="#" class="process-lightbox process-title-link" data-index="3">Storitve preciznega kmetijstva</a></h3>
+                <p><a href="#" class="process-lightbox process-body-link" data-index="3">Vaša kmetija potrebuje uslugo gnojenja, setve, zaščite posevka? Za vas lahko to pravimo mi, s podporo najnovejše mehanizacije in strokovnim znanjem.</a></p>
             </div>
             <div class="process-card fade-in">
-                <div class="process-circle-img"><img src="{{ '/assets/img/Strokovna podpora in svetovanje.svg' | relative_url }}" alt="Strokovna podpora in svetovanje"></div>
-                <h3>Strokovna podpora in svetovanje</h3>
-                <p>Precizna analiza tal je začetek procesa. V času od analize vam je potreben nekdo, ki razume tla, elemente v tleh, potrebe posevka in doseganje najvišjih standardov v proizvodnji z uporabo najnovejših tehnologij za ustvarjanje presežkov.</p>
+                <div class="process-circle-img"><a href="#" class="process-lightbox" data-index="4"><img src="{{ '/assets/img/Strokovna podpora in svetovanje.svg' | relative_url }}" alt="Strokovna podpora in svetovanje"></a></div>
+                <h3><a href="#" class="process-lightbox process-title-link" data-index="4">Strokovna podpora in svetovanje</a></h3>
+                <p><a href="#" class="process-lightbox process-body-link" data-index="4">Precizna analiza tal je začetek procesa. V času od analize vam je potreben nekdo, ki razume tla, elemente v tleh, potrebe posevka in doseganje najvišjih standardov v proizvodnji z uporabo najnovejših tehnologij za ustvarjanje presežkov.</a></p>
             </div>
         </div>
     </div>
@@ -350,3 +454,21 @@ nav_order: 1
         </div>
     </div>
 </section>
+
+<!-- Hidden gallery — all images in /assets/img/gallery/, sorted by name -->
+<div style="position:absolute;width:0;height:0;overflow:hidden;" aria-hidden="true">
+{% assign gallery_images = site.static_files | where_exp:"f","f.path contains '/assets/img/gallery/'" | sort:"name" %}
+{% for img in gallery_images %}<a href="{{ img.path | relative_url }}" class="glightbox"></a>
+{% endfor %}
+</div>
+
+<script src="{{ '/assets/js/glightbox.min.js' | relative_url }}"></script>
+<script>
+var lightbox = GLightbox({ selector: '.glightbox', touchNavigation: true, loop: true, zoomable: false });
+document.querySelectorAll('.process-lightbox').forEach(function(el) {
+    el.addEventListener('click', function(e) {
+        e.preventDefault();
+        lightbox.openAt(parseInt(this.dataset.index));
+    });
+});
+</script>

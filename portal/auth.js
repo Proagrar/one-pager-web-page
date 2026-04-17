@@ -1,21 +1,34 @@
-import { CUSTOMERS } from './data.js';
+// TODO: replace with API call to /api/auth/login once backend exists
+import { supabase } from './data.js';
 
 let _current = null;
 
-// TODO: replace with API call to /api/auth/login
-export function login(email, password) {
-  const record = CUSTOMERS[email];
-  if (!record || record.password !== password) return false;
-  _current = { email, ...record };
-  return true;
+// Returns the customer object on success, null on failure
+export async function login(email, password) {
+  const { data, error } = await supabase
+    .from('customers')
+    .select('*')
+    .eq('email', email)
+    .eq('portal_password', password)
+    .maybeSingle();
+
+  if (error || !data) return null;
+  _current = data;
+  return data;
 }
 
+// Restore session by customer id (stored in URL hash after login)
 // TODO: replace with API call to /api/auth/session
-export function loadSession(email) {
-  const record = CUSTOMERS[email];
-  if (!record) return false;
-  _current = { email, ...record };
-  return true;
+export async function loadSession(customerId) {
+  const { data, error } = await supabase
+    .from('customers')
+    .select('*')
+    .eq('id', customerId)
+    .maybeSingle();
+
+  if (error || !data) return null;
+  _current = data;
+  return data;
 }
 
 export function logout() {

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 80" width="200" height="80">
+  <rect width="200" height="80" rx="8" fill="#f0f4ee"/>
+  <!-- Wheat stalk -->
+  <g fill="#7a9e5f" opacity="0.7">
+    <!-- stem -->
+    <rect x="99" y="18" width="2" height="44" rx="1"/>
+    <!-- left grains -->
+    <ellipse cx="91" cy="28" rx="6" ry="3.5" transform="rotate(-30 91 28)"/>
+    <ellipse cx="89" cy="37" rx="6" ry="3.5" transform="rotate(-30 89 37)"/>
+    <ellipse cx="91" cy="46" rx="6" ry="3.5" transform="rotate(-30 91 46)"/>
+    <!-- right grains -->
+    <ellipse cx="109" cy="28" rx="6" ry="3.5" transform="rotate(30 109 28)"/>
+    <ellipse cx="111" cy="37" rx="6" ry="3.5" transform="rotate(30 111 37)"/>
+    <ellipse cx="109" cy="46" rx="6" ry="3.5" transform="rotate(30 109 46)"/>
+    <!-- top grain -->
+    <ellipse cx="100" cy="20" rx="3.5" ry="6" rx="3.5"/>
+  </g>
+  <text x="100" y="72" font-family="sans-serif" font-size="9" fill="#7a9e5f" text-anchor="middle" opacity="0.8">LOGOTIP V PRIPRAVI</text>
+</svg>

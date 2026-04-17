@@ -28,6 +28,8 @@
   <main class="dashboard-main">
     <div class="container">
 
+      <div class="login-error" id="dashboard-error" role="alert" aria-live="polite"></div>
+
       <section class="dashboard-greeting" aria-label="Pozdrav">
         <h1 id="greeting-text"></h1>
         <p>Tukaj so vaši podatki o kmetijskih storitvah.</p>
@@ -67,9 +69,10 @@
             <thead>
               <tr>
                 <th>Naziv poročila</th>
+                <th>Leto</th>
                 <th>Datum</th>
-                <th>Kategorija</th>
-                <th>Prenos</th>
+                <th>Poročilo</th>
+                <th>Kalkulacija</th>
               </tr>
             </thead>
             <tbody id="reports-body"></tbody>

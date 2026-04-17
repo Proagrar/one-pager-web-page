@@ -7,7 +7,7 @@ window.addEventListener('scroll', function() {
     if (progressBar) {
         progressBar.style.width = scrollPercent + '%';
     }
-    
+
     // Shrink header on scroll
     const header = document.getElementById('header');
     if (header) {
@@ -17,11 +17,21 @@ window.addEventListener('scroll', function() {
             header.classList.remove('scrolled');
         }
     }
-    
+
     // Parallax hero background
     const heroBg = document.getElementById('hero-bg');
     if (heroBg && scrolled < window.innerHeight) {
         heroBg.style.transform = `translateY(${scrolled * 0.5}px)`;
+    }
+
+    // Scroll-to-top button — show after 400px
+    const scrollTopBtn = document.getElementById('scroll-top');
+    if (scrollTopBtn) {
+        if (scrolled > 400) {
+            scrollTopBtn.classList.add('visible');
+        } else {
+            scrollTopBtn.classList.remove('visible');
+        }
     }
 });
 
