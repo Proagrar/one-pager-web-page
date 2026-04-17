@@ -183,28 +183,28 @@ body {
 }
 
 .login-logo {
-  display: flex;
-  justify-content: center;
+  display: block;
   margin-bottom: 2rem;
 }
 
 .login-logo img {
-  height: 54px;
-  width: auto;
+  width: 220px;
+  height: auto;
+  display: block;
 }
 
 .login-title {
   font-size: 1.55rem;
   font-weight: 800;
   color: var(--color-blue);
-  text-align: center;
+  text-align: left;
   margin-bottom: 0.4rem;
 }
 
 .login-subtitle {
   font-size: 0.93rem;
   color: var(--color-text-light);
-  text-align: center;
+  text-align: left;
   margin-bottom: 2rem;
 }
 
