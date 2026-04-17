@@ -1,20 +1,10 @@
-// TODO: replace with API call to /api/auth/login
-export const CUSTOMERS = {
-  "customer@proagrar.si": {
-    password: "demo2024",
-    name: "Janez Novak",
-    reports: [
-      // TODO: replace with API call to /api/customer/:id/reports
-      { id: 1, title: "Spring Soil Analysis 2024",       date: "2024-03-15", category: "Soil",       url: "/reports/soil-2024.pdf" },
-      { id: 2, title: "Pesticide Application Report Q2", date: "2024-06-01", category: "Protection", url: "/reports/pest-q2-2024.pdf" },
-      { id: 3, title: "Harvest Summary — North Field",   date: "2024-09-20", category: "Harvest",    url: "/reports/harvest-2024.pdf" },
-    ],
-    actions: [
-      // TODO: replace with API call to /api/customer/:id/actions
-      { type: "completed", action: "Herbicide spraying",   field: "North Field", ha: 12.5, date: "2024-05-10" },
-      { type: "completed", action: "Soil sampling",        field: "South Field", ha:  8.0, date: "2024-03-02" },
-      { type: "planned",   action: "Autumn fertilization", field: "South Field", ha:  8.0, date: "2024-10-10" },
-      { type: "planned",   action: "Winter wheat seeding", field: "East Parcel", ha:  5.3, date: "2024-10-25" },
-    ],
-  },
-};
+// Supabase client — replace SUPABASE_ANON_KEY with the anon/public key from
+// Supabase Dashboard → Project Settings → API
+// TODO: replace with environment variable or server-side config before going live
+
+import { createClient } from 'https://cdn.jsdelivr.net/npm/@supabase/supabase-js/+esm';
+
+const SUPABASE_URL      = 'https://tngclmwzaeolvvefgptq.supabase.co';
+const SUPABASE_ANON_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InRuZ2NsbXd6YWVvbHZ2ZWZncHRxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzYyODA1MjcsImV4cCI6MjA5MTg1NjUyN30.ouD9IYVaWx1CYerl-s1KuFIHx9WD0_ZsMoUuaJUnRwY';
+
+export const supabase = createClient(SUPABASE_URL, SUPABASE_ANON_KEY);

@@ -55,6 +55,7 @@
     const errorEl  = document.getElementById('login-error');
     const emailEl  = document.getElementById('email');
     const passEl   = document.getElementById('password');
+    const submitBtn = form.querySelector('button[type="submit"]');
 
     function clearError() {
       errorEl.textContent = '';
@@ -64,18 +65,25 @@
     emailEl.addEventListener('input', clearError);
     passEl.addEventListener('input', clearError);
 
-    form.addEventListener('submit', function (e) {
+    form.addEventListener('submit', async function (e) {
       e.preventDefault();
       const email    = emailEl.value.trim();
       const password = passEl.value;
 
-      if (login(email, password)) {
-        window.location.href = 'dashboard.html#' + encodeURIComponent(email);
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Prijavljam…';
+
+      const customer = await login(email, password);
+
+      if (customer) {
+        window.location.href = 'dashboard.html#' + encodeURIComponent(customer.id);
       } else {
         errorEl.textContent = 'Napačna e-pošta ali geslo. Prosimo, poskusite znova.';
         errorEl.classList.add('visible');
         passEl.value = '';
         passEl.focus();
+        submitBtn.disabled = false;
+        submitBtn.textContent = 'Prijava';
       }
     });
   </script>
