@@ -283,6 +283,9 @@ Svoje znanje, ki vključuje najnovejšja agronomska znanja pridobivamo na poljih
                 <img src="{{ '/assets/img/partner-colnar.svg' | relative_url }}" alt="Colnar partner" loading="lazy">
             </div>
             <div class="partner-item fade-in">
+                <img src="{{ '/assets/img/Partner-Dolenc.jpeg' | relative_url }}" alt="Dolenc partner" loading="lazy">
+            </div>
+            <div class="partner-item fade-in">
                 <img src="{{ '/assets/img/partner-ego.svg' | relative_url }}" alt="Ego partner" loading="lazy">
             </div>
             <div class="partner-item fade-in">
