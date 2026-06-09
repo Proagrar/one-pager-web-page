@@ -89,7 +89,7 @@
         .header-inner {
             display: flex;
             justify-content: space-between;
-            align-items: center;
+            align-items: flex-end;
             padding: 0.54rem 0;
             transition: padding 0.4s cubic-bezier(0.4, 0, 0.2, 1);
         }
@@ -1363,6 +1363,7 @@
             
             .header-inner {
                 justify-content: flex-start;
+                align-items: center;
             }
 
             .logo {
