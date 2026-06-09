@@ -115,7 +115,7 @@ nav_order: 1
                 <a href="https://familijaestate.si/" target="_blank" rel="noopener noreferrer"><img src="{{ '/assets/img/Logos/logo-familija.svg' | relative_url }}" alt="Familija" loading="lazy"></a>
                 <a href="https://suklje.com/" target="_blank" rel="noopener noreferrer"><img src="{{ '/assets/img/Logos/logo-suklje.svg' | relative_url }}" alt="Šuklje" loading="lazy"></a>
                 <a href="https://www.klet-krsko.si/" target="_blank" rel="noopener noreferrer"><img src="{{ '/assets/img/Logos/logo-kz-krsko.svg' | relative_url }}" alt="KZ Krško z.o.o." loading="lazy"></a>
-                <img src="{{ '/assets/img/Logos/logo-dolenc.svg' | relative_url }}" alt="Kmetija Dolenc" loading="lazy">
+                <img src="{{ '/assets/img/Partner-Dolenc.jpeg' | relative_url }}" alt="Kmetija Dolenc" loading="lazy">
                 <a href="https://mulej-bled.si/sl/" target="_blank" rel="noopener noreferrer"><img src="{{ '/assets/img/Logos/logo-mulej-bled.svg' | relative_url }}" alt="Kmetija Mulej Bled" loading="lazy"></a>
             </div>
             <div class="logo-page">
