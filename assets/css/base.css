@@ -1365,17 +1365,26 @@
                 justify-content: flex-start;
             }
 
+            .logo {
+                flex-shrink: 0;
+                margin-right: auto;
+            }
+
             .menu-toggle {
                 display: block;
-                margin-left: auto;
+                margin-left: 0;
             }
 
             .logo img {
                 height: 141px;
             }
 
+            .header.scrolled .header-inner {
+                padding: 0.2rem 0;
+            }
+
             .header.scrolled .logo img {
-                height: 65px;
+                height: 94px;
             }
             
             .hero {
