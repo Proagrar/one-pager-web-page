@@ -25,7 +25,7 @@ nav_order: 1
     <div class="container">
         <div class="stats-grid">
             <div class="stat-item fade-in">
-                <span class="stat-number">200+</span>
+                <span class="stat-number">300+</span>
                 <span class="stat-label">zadovoljnih naročnikov</span>
             </div>
             <div class="stat-item fade-in">
@@ -37,7 +37,7 @@ nav_order: 1
                 <span class="stat-label">uspešnost projektov</span>
             </div>
             <div class="stat-item fade-in">
-                <span class="stat-number">10.000+</span>
+                <span class="stat-number">20.000+</span>
                 <span class="stat-label">ha opravljenih analiz</span>
             </div>
         </div>
